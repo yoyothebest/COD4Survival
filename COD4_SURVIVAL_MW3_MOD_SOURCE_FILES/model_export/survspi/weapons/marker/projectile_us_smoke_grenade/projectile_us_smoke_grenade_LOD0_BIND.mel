@@ -1,0 +1,35 @@
+/*
+* Advanced weighting script X
+* Wraith - Game extraction tools
+*/
+
+global proc WraithMesh_a39b4e51_00_BindFunc()
+{
+   select -r WraithMesh_a39b4e51_00;
+   select -add polysurface22;
+   newSkinCluster "-toSelectedBones -mi 15 -omi true -dr 5.0 -rui false";   string $clu = findRelatedSkinCluster("WraithMesh_a39b4e51_00");
+
+   skinPercent -tv polysurface22 1.0 $clu WraithMesh_a39b4e51_00.vtx[0:303];
+}
+
+global proc RunAdvancedScript()
+{
+   catch(WraithMesh_a39b4e51_00_BindFunc());
+}
+
+global proc NamespacePurge()
+{
+   string $allNodes[] = `ls`;
+   for($node in $allNodes) {
+      string $buffer[];
+      tokenize $node ":" $buffer;
+      string $newName = $buffer[size($buffer)-1];
+       catchQuiet(`rename $node $newName`);
+   }
+}
+
+print("Currently binding the current model, please wait...\n");
+NamespacePurge();
+RunAdvancedScript();
+print("The model has been binded.\n");
+
