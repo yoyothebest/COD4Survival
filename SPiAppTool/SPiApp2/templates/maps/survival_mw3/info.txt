@@ -1,0 +1,8 @@
+Call of Duty 4: Mod Tools - Spi App Template - "Survival MW3"
+
+The following Files are REQUIRED in order for this template to work
+
+raw/maps/_survspi.gsc
+english/localizedstrings/survspi.str
+soundaliases/survspi.csv
+sound/survspi/(all sub-folders)
