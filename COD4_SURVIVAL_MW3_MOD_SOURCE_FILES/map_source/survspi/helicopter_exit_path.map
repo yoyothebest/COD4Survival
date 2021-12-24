@@ -1,0 +1,41 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"classname" "worldspawn"
+// brush 0
+{
+ ( 8 8 888 ) ( 8 -8 888 ) ( 9992 -8 -8 ) vehicle_trigger 64 64 0 -2736 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 9992 8 8 ) ( 9992 -8 8 ) ( 8 -8 904 ) vehicle_trigger 64 64 0 -2736 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 8 -8 904 ) ( 32 -8 904 ) ( 32 -8 888 ) vehicle_trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 9992 -8 8 ) ( 9992 8 8 ) ( 9992 8 -8 ) vehicle_trigger 64 64 2736 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 32 8 904 ) ( 8 8 904 ) ( 8 8 888 ) vehicle_trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 8 -8 888 ) ( 8 8 888 ) ( 8 8 904 ) vehicle_trigger 64 64 2736 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+}
+// entity 1
+{
+"angles" "0 0 0"
+"height" "1000"
+"script_noteworthy" "deleteme"
+"targetname" "auto5"
+"origin" "10000.0 0.0 0.0"
+"classname" "script_origin"
+"speed" "500"
+"radius" "500"
+"_color" "0.8 0.8 0"
+}
+// entity 2
+{
+"height" "1000"
+"script_noteworthy" "heli_exits_nw"
+"target" "auto5"
+"targetname" "heli_exits"
+"origin" "0.0 0.0 896.0"
+"classname" "script_origin"
+"speed" "500"
+"radius" "500"
+"_color" "0.8 0.8 0"
+"angles" "0 0 0"
+}

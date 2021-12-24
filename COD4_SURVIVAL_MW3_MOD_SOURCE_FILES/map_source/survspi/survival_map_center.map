@@ -1,0 +1,14 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"classname" "worldspawn"
+}
+// entity 1
+{
+"classname" "script_origin"
+"targetname" "survival_center_of_map_org"
+"origin" "0.0 0.0 0.0"
+"angles" "0 0 0"
+}

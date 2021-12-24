@@ -1,0 +1,90 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"classname" "worldspawn"
+}
+// entity 1
+{
+"target" "auto1"
+"height" "1000"
+"script_anglevehicle" "1"
+"_color" "1 0.5 0"
+"radius" "5000"
+"speed" "250"
+"classname" "script_origin"
+"origin" "0.0 0.0 896.0"
+"script_unload" "back"
+"targetname" "lzs"
+"script_noteworthy" "lzsnw"
+"angles" "0 0 0"
+}
+// entity 2
+{
+"targetname" "auto1"
+"angles" "0 0 0"
+"origin" "-128.0 0.0 0.0"
+"classname" "script_origin"
+"_color" "1 1 0.5"
+"height" "1000"
+}
+// entity 3
+{
+"classname" "func_group"
+// brush 0
+{
+ ( 192 104 0 ) ( 192 232 0 ) ( 104 232 0 ) vehicle_trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 112 232 56 ) ( 200 232 56 ) ( 200 104 56 ) vehicle_trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 104 232 120 ) ( 104 104 120 ) ( 104 104 -8 ) vehicle_trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 128 88 64 ) ( 216 88 64 ) ( 216 88 -64 ) vehicle_trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 136 -8 120 ) ( 136 120 120 ) ( 136 120 -8 ) vehicle_trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -32 120 120 ) ( -120 120 120 ) ( -120 120 -8 ) vehicle_trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 1
+{
+ ( 80 152 0 ) ( 80 280 0 ) ( -8 280 0 ) vehicle_trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 280 56 ) ( 88 280 56 ) ( 88 152 56 ) vehicle_trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -8 280 120 ) ( -8 152 120 ) ( -8 152 -8 ) vehicle_trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 16 136 64 ) ( 104 136 64 ) ( 104 136 -64 ) vehicle_trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 24 40 120 ) ( 24 168 120 ) ( 24 168 -8 ) vehicle_trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -144 168 120 ) ( -232 168 120 ) ( -232 168 -8 ) vehicle_trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 2
+{
+ ( -16 -64 0 ) ( -16 64 0 ) ( -104 64 0 ) vehicle_trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -96 64 56 ) ( -8 64 56 ) ( -8 -64 56 ) vehicle_trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -104 64 120 ) ( -104 -64 120 ) ( -104 -64 -8 ) vehicle_trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -80 -80 56 ) ( 8 -80 56 ) ( 8 -80 -72 ) vehicle_trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -72 -176 120 ) ( -72 -48 120 ) ( -72 -48 -8 ) vehicle_trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -240 -48 128 ) ( -328 -48 128 ) ( -328 -48 0 ) vehicle_trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 3
+{
+ ( 72 -144 0 ) ( 72 -16 0 ) ( -16 -16 0 ) vehicle_trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -8 -16 56 ) ( 80 -16 56 ) ( 80 -144 56 ) vehicle_trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -16 -16 120 ) ( -16 -144 120 ) ( -16 -144 -8 ) vehicle_trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 8 -160 56 ) ( 96 -160 56 ) ( 96 -160 -72 ) vehicle_trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 16 -256 120 ) ( 16 -128 120 ) ( 16 -128 -8 ) vehicle_trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -152 -128 128 ) ( -240 -128 128 ) ( -240 -128 0 ) vehicle_trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 4
+{
+  contents nonColliding;
+ ( 88 -16 0 ) ( 88 -8 0 ) ( -80 -8 0 ) vehicle_trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -56 -8 888 ) ( 112 -8 888 ) ( 112 -16 888 ) vehicle_trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -8 -8 -72 ) ( -8 -16 -72 ) ( -8 -16 -80 ) vehicle_trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 168 -16 1408 ) ( 336 -16 1408 ) ( 336 -16 1400 ) vehicle_trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -16 80 ) ( 0 -8 80 ) ( 0 -8 72 ) vehicle_trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 80 -8 -160 ) ( -88 -8 -160 ) ( -88 -8 -168 ) vehicle_trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 5
+{
+ ( -128 0 0 ) ( -128 128 0 ) ( -216 128 0 ) vehicle_trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -208 128 56 ) ( -120 128 56 ) ( -120 0 56 ) vehicle_trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -216 128 120 ) ( -216 0 120 ) ( -216 0 -8 ) vehicle_trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -192 -16 56 ) ( -104 -16 56 ) ( -104 -16 -72 ) vehicle_trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -184 -112 120 ) ( -184 16 120 ) ( -184 16 -8 ) vehicle_trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -352 16 128 ) ( -440 16 128 ) ( -440 16 0 ) vehicle_trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+}

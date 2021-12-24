@@ -1,0 +1,643 @@
+Call of Duty 4: Survival Mode MW3 MOD Version 1.0 OPEN SOURCE
+Date: May 2, 2020
+By SPi.
+
+Categories:
+HOW TO USE
+SOURCE FILES
+ZONE FILES
+
+In case you create your own variation of the game mode, please make sure to give it a proper title 
+that describes its functionality changes and difference from other versions that might come. 
+Just please make sure to give credits to SPi and Scillman for the hard work of putting together 
+the basic version of it which started it all.
+
+Important: If you make a different mod version of this make sure to rename your new
+mod folder with a new and different name. Do NOT release modified versions of this mod with
+mod folder named survival_mw3 because there will be conflicts with other versions.
+
+######################################
+HOW TO USE:
+######################################
+
+The source files of the Survival Mode are listed in the SOURCE FILES category.
+
+If you wish you create your own levels for this Survival Mode there are 
+some very specific steps that you need to follow in order for everything to function properly.
+
+Useful Call of Duty 4 Singleplayer Level Making Tutorials:
+https://www.youtube.com/watch?v=rQ7W1xWVHEw&list=PLfPZdzppHBCqkM9rk9HLkLs8fjVVMSAj_
+
+INSTALL:
+First of all to install the source files
+copy folders: 
+
+main
+raw
+mods
+map_source
+zone_source
+source_data
+model_export
+
+that came with this this download,
+and paste them in your call of duty 4 game directory.
+If done properly everything should go where they must.
+
+MAPS INCLUDED:
+Only the Well Town example map is included. 
+You can create your own template map with the Spi App Template feature
+Instead of editing well town which is messy.
+
+After you install you can just compile Welltown and play it.
+Again, you can use the Spi App to create a new basic-empty survival map,
+and expand upon it to create your own level.
+
+It is HIGHLY recommended to use the SPiApp that came with this download.
+Elaborated information about how to use that tool are in the text file of the folder of the app.
+
+However if you don't want to use SPiApp then you will have to work with the standard COD4 Mod tools
+to create and organize your own map from scratch which will be way more time consuming and 
+will require a lot of file and asset gathering and listing.
+That's why I urge you to use SPiApp to make the levels.
+It will really make your job so much easier and save you a lot of time. 
+
+For that reason I gave you two Guides below. 
+One for the old way, and one for the SpiApp Way.
+I will start with the SPiApp way to show you how simple it is.
+And if you still want to use the classic tools for it.
+A guide for that will be put right afterwards.
+
+SURVIVAL GUIDES:
+
+==== SPiApp TOOLS SURVIVAL GUIDE:=========================================================================
+
+Please make sure you have read and understood the
+SPiapp Guide.txt before trying this SPiApp method.
+
+Now if you chose the Classic Mod Tools method you are
+already tiered from reading all the details.
+But this method here, will clear everything up for you.
+
+Assuming you know how to use SPiApp which is explained 
+in the txt file of the app folder, all you have to do
+to generate a basic example template survival map
+where you can expand upon to create your own survival map
+is to Click on NEW MAP in the Compile tab.
+Select the Template: survival_mw3
+Type a valid map name, for example su_backalley.
+Click Create Map.
+And DONE!
+
+Now you have a very basic example survival map
+where you can expand upon to create your own map!
+
+AS SIMPLE AS THAT!
+
+However you are must still make sure that when you edit the map,
+you will stay in the survival prefab ents limits 
+that are explained below in the numbered list of ents.
+Make sure to read that list, it's very important that you 
+know all the details about the radiant ents necessary for 
+this survival mode.
+
+Finally, you will have to learn how the color group pathing system works.
+And how to place pathnodes, cover nodes and group them in color group triggers.
+My youtube tutorials explain the basics. Just note that they're only used
+so ally NPCs can follow player around. They use blue color and team allies.
+Keep those in mind regarding color groups.
+
+==== CLASSIC MOD TOOLS GUIDE:=========================================================================
+
+Before we start it would be good to read the SOURCE FILES 
+category below to get an idea of what files we possess.
+
+Given you installed the source files properly, 
+you are now ready to start making your own survival levels.
+To make a level of your own you need to know how to design cod4 levels.
+I can not teach that to you here. If you know how to make maps, proceed.
+It is recommended that if you want to use your map for survival mode
+better name it with the (su_) in front of it's actual name.
+Example: su_backalley.map
+Assuming your map's level design is somewhat ready,
+we need to be able to run it in Call of Duty 4 Map in Singleplayer.
+Just the design of the map is all we need. Don't bother with script.
+If you don't know how to do that you need to follow my tutorials linked all over these files.
+
+Having your map ready, you can start placing down the necessary ents in Radiant.
+These ents are all in map_source/survspi/
+Let's break down what each one of them is needed for.
+And it is VERY IMPORTANT to place down a
+specific number of each of those ents 
+in the survival map so it functions properly.
+
+Total of 17 Ents need to be EXPLAINED:
+
+1) start_zoom.map ( Only 1 of this must be placed)
+This is the player_spawn of the level. If you already have an info_player_start
+delete that and use Start_zoom instead. This is also needed for the start zoom in effect.
+
+2) survival_map_center.map ( Only 1 of this must be placed )
+This is necessary for spawnign the AC130 and the UAV and other various settings.
+Place that in the aproximate center of your map.
+
+3) armory_weapons.map ( Only 1 of this must be placed )
+This is the weapon armory shop that will exist in the map.
+
+4) armory_equipment.map ( Only 1 of this must be placed )
+This is the equipment armory shop that will exist in the map.
+
+5) armory_airsupport.map ( Only 1 of this must be placed )
+This is the air support armory shop that will exist in the map.
+
+6) enemy_spawns.map ( Minimum 6 Maximum 16 )
+This is where enemies will spawn. Put these around the map with sufficient space between them.
+but be careful do not post too many or too few of them or else there will be problems or errors.
+The limits are clear above.
+
+7) helicopter_ally.map ( Only 1 of this must be placed )
+This is where the ally helicopter will come from.
+The heli path is visible with an empty trigger brush.
+The helicopter and NPC spawn must be out of the playable map and the path end must 
+be touching the edge of the playable map in the appropriate height.
+
+This heli ally prefab has a few more variations which define what kind of teams there will be.
+I've included 3 versions. Use ONLY one of them in your map.
+
+Here are the versions:
+helicopter_ally (MW2 TaskForce141 - MW3 Sas)
+helicopter_ally_cod4_sas_woodland_blackkit (COD4 Sas Woodland - COD4 Blackkit)
+helicopter_ally_cod4_woodland (COD4 Marines Woodland - COD4 Sas Woodland)
+helicopter_ally_cod4_usmc_blackkit (COD4 Marines Desert - COD4 Blackkit)
+helicopter_ally_delta_mw3sas (MW3 Delta - MW3 Sas)
+
+First team is "Task Force" second is "Riot Team".
+
+8) helicopter_jugg1.map ( Only 1 of this must be placed )
+9) helicopter_jugg2.map ( Only 1 of this must be placed )
+10) helicopter_jugg3.map ( Only 1 of this must be placed )
+The three prefabs above are the juggernaut helicopter spawns.
+Only one of each must be placed in the map in a similar way that the
+ally heli is placed. The heli spawn must be away from the playable map and the 
+path end must be touching the edge of your playable map in the appropriate height.
+
+11) helicopter_hind1.map ( Only 1 of this must be placed )
+12) helicopter_hind2.map ( Only 1 of this must be placed )
+The two prefabs above are the enemy attack heli spawns.
+The same logic applies to them too with the above helis.
+The heli spawn must be away from the playable map and the path end must 
+be touching the edge of your playable map in the appropriate height.
+
+13) helicopter_landing_zone.map ( At least 4 of them must be placed. )
+This is where transport helis will land their troops.
+These must be placed in open areas of your map.
+At least 4 of them must exist in your map.
+Place them in areas where the ground circular trigger
+isnt affected by any props or too many solid objects and walls.
+The appropriate height is easy to tell from the shape of the prefab.
+
+14) helicopter_exit_path.map ( At least 4 of them must be placed. )
+These are paths that the transport helis will chose to exit the map.
+At least 4 of them must be placed. Make sure to place them properly.
+The Higher edge is the Start of the path that must touch the edge 
+of your playable map in the appropriate prefab height.
+And the lower edge is the path end that should be far away from your map
+
+15) helicopter_attack_heli_pos.map ( At least 2 or more of them must be placed. )
+These are goal positions that the attack helicopters will use to seek player.
+You can experiment with them and place as many of them as you think your map needs
+so attack helis seek player with success. The height is not really important in these.
+
+16) helicopter_crash_origin.map ( At least 2 or more of them must be placed. )
+These are helicopter crash origins that attack helicopters will go to when they are destroyed.
+You can place a variety of those on rooftops, on walls, on open areas and generally
+areas where helicopter would be appropriate to crash.
+No real limit is set for this. You can be generous when placing these.
+
+17) ending_trigger.map ( Only 1 of this must be placed )
+This is just the ending trigger. Place it anywhere you want.
+But only ONE must exist in your map.
+
+If your map has the prefab ents properly placed as elaborated above,
+then we are ready to move to the final 3 steps.
+
+One last thing we have to do in radiant is set up the NPC paths.
+This is going to take quite some time depending on the map's complexity.
+You can follow my Spawning and Moving NPCs tutorial in the playlist linked above
+to get an understanding of how to do this step.
+
+Assuming you know how to place pathnodes around the map, and how to place
+cover nodes around the map, as well as using color groups in areas,
+you can now proceed.
+
+It is suggested that you place a rich amount of cover nodes
+around various obstacles around your map. 
+The NPCs will function way better this way.
+
+Now if you wish your ally NPCs to follow you, you are required to 
+set up color group areas with triggers and cover nodes.
+My tutorial explains the basic of this method. And frankly it may sound
+complicated and hard to beginners but it's the easiest way of telling NPCs to move around the map.
+Make sure you only use BLUE color and ALLIES team. Because that's what friendly NPCs work on.
+Hope you figure it out.
+
+ALL color group triggers that handle ally NPCs must have 
+the targetname of "ally_color_triggs"
+Extremely necessary.
+
+Next setting up your map's script file is very easy because
+_survspi.gsc handles everything.
+
+Assuming you have a basic gsc script file of your map in raw/maps
+you only need to add the following two lines.
+
+maps\_survspi::survspi_init(); // This must be BEFORE maps\_load::main(); 
+thread maps\_survspi::survspi_start(); // This must be RIGHT AFTER maps\_load::main(); 
+
+Your script will look something like this:
+
+main()
+{
+	maps\_survspi::survspi_init();
+	maps\_load::main();
+	thread maps\_survspi::survspi_start();
+}
+
+And as easy as that we are DONE with the script!
+
+One last step we need to do is our map's zone file.
+Assuming your map's zone file is auto generated with the mod tools
+when we first clicked "Build Fast File"
+then all we have to do is edit it,
+and add EVERYTHING from the
+ZONE FILE LOADING category below.
+Just scroll down a bit and you'll see it.
+Careful of the note that says that you have to replace
+the 4 words YOURMAPNAME with your actual map name
+in our previous example it was su_backalley.
+
+We are ready!
+Compile BSP, with bsp, light, and paths enabled.
+Compile Reflections,
+Build Fast File
+and if everything went right,
+the map will be fully functional with the Survival mode!
+
+######################################
+ZONE FILE LOADING.
+######################################
+
+Assuming you create survival map 
+without the use of templates from SPiApp
+then you will need to load the following files 
+in your the zone file of your map.
+
+In the long list of asset paths below,
+you must replace the word YOURMAPNAME
+with your map name after you paste them in your zone file.
+
+DO NOT REPLACE THE TEXT BELOW
+REPLACE THEM AFTER YOU PASTED THEM
+IN YOUR ZONE FILE ASSET LIST
+KEEP THIS AS A TEMPLATE
+
+#######################################################
+#######################################################
+
+ignore,code_post_gfx
+ignore,common
+col_map_sp,maps/YOURMAPNAME.d3dbsp
+rawfile,maps/YOURMAPNAME.gsc
+localize,YOURMAPNAME
+sound,common,YOURMAPNAME,!all_sp
+sound,generic,YOURMAPNAME,!all_sp
+sound,voiceovers,YOURMAPNAME,!all_sp
+sound,requests,YOURMAPNAME,!all_sp
+sound,ru_battlechatter,YOURMAPNAME,all_sp
+sound,uk_battlechatter,YOURMAPNAME,all_sp
+sound,us_battlechatter,YOURMAPNAME,all_sp
+sound,survspi,YOURMAPNAME,all_sp
+
+localize,survspi
+rawfile,maps/_survspi.gsc
+rawfile,soundaliases/survspi.csv
+menufile,ui/scriptmenus/survspi_weapons.menu
+menufile,ui/scriptmenus/survspi_equipment.menu
+menufile,ui/scriptmenus/survspi_support.menu
+menufile,ui/scriptmenus/survspi_gameover.menu
+
+xanim,Juggernaut_stand_idle
+xanim,Juggernaut_aim5
+xanim,Juggernaut_stand_reload
+xanim,juggernaut_walkF
+
+weapon,sp/smoke_marker
+material,hudicon_american
+material,hudicon_riot
+material,icon_riot
+material,icon_american
+material,hud_self_revive_so
+material,icon_vests
+material,icon_ac130
+material,icon_airstrike
+xmodel,mw3_jugg_exp
+xmodel,viewmodel_mw3_delta
+xmodel,viewmodel_mw3_delta_player
+material,armory_hudicon_weapons
+material,armory_hudicon_equipment
+material,armory_hudicon_support
+
+material,damage_feedback
+material,overlay_hunted_red
+material,objpoint_flak
+material,objpoint_ammo
+material,objpoint_satallite
+material,faction_128_usmc
+material,faction_128_sas
+material,faction_128_ussr
+material,faction_128_arab
+material,specialty_armorvest
+material,specialty_extraammo
+material,specialty_pistoldeath
+material,specialty_longersprint
+material,specialty_weapon_rpg
+material,specialty_fastreload
+material,specialty_twoprimaries
+material,weapon_m16a4
+material,weapon_m16a4_gl
+material,weapon_ak47
+material,weapon_ak47_gl
+material,weapon_m4carbine
+material,weapon_m4carbine_suppressor
+material,weapon_m4carbine_reflex
+material,weapon_m4carbine_gl
+material,weapon_m4carbine_acog
+material,weapon_g3
+material,weapon_g36c
+material,weapon_mp44
+material,weapon_mp5
+material,weapon_mp5_reflex
+material,weapon_mp5_suppressor
+material,weapon_p90
+material,weapon_p90_suppressor
+material,weapon_p90_reflex
+material,weapon_skorpion
+material,weapon_aks74u
+material,weapon_mini_uzi
+material,weapon_mini_uzi_suppressor
+material,weapon_m249saw
+material,weapon_rpd
+material,weapon_m60e4
+material,weapon_m14
+material,weapon_m14_scoped
+material,weapon_m40a3
+material,weapon_dragunovsvd
+material,weapon_barrett50cal
+material,weapon_remington700
+material,weapon_aw50
+material,weapon_winchester1200
+material,weapon_benelli_m4
+material,weapon_colt_45
+material,weapon_m9beretta
+material,weapon_desert_eagle
+material,weapon_usp_45
+material,weapon_usp_45_silencer
+material,weapon_fraggrenade
+material,weapon_flashbang
+material,weapon_c4
+material,weapon_claymore
+material,weapon_rpg7
+material,weapon_at4
+material,faction_128_usmc
+material,faction_128_sas
+material,faction_128_ussr
+material,faction_128_arab
+material,specialty_armorvest
+material,specialty_extraammo
+material,specialty_pistoldeath
+material,specialty_longersprint
+material,specialty_weapon_rpg
+material,specialty_fastreload
+material,specialty_twoprimaries
+material,specialty_grenadepulldeath
+material,mtl_perc_martyrdom
+material,objpoint_flak
+material,compass_objpoint_flak
+material,gradient_bottom
+material,gradient_center
+material,rank_bgen1
+
+weapon,sp/fraggrenade
+weapon,sp/flash_grenade
+weapon,sp/c4
+weapon,sp/claymore
+weapon,sp/beretta
+weapon,sp/usp
+weapon,sp/usp_silencer
+weapon,sp/colt45
+weapon,sp/deserteagle
+weapon,sp/m16_basic 
+weapon,sp/m16_grenadier 
+weapon,sp/m203 
+weapon,sp/ak47
+weapon,sp/ak47_grenadier 
+weapon,sp/gp25 
+weapon,sp/rpg_player 
+weapon,sp/at4 
+weapon,sp/stinger 
+weapon,sp/m4_grunt 
+weapon,sp/m4_grenadier 
+weapon,sp/m4_silencer  
+weapon,sp/m4_silencer_acog 
+weapon,sp/m4m203_acog 
+weapon,sp/m4m203_silencer 
+weapon,sp/m4m203_silencer_reflex 
+weapon,sp/m203_m4 
+weapon,sp/m203_m4_acog 
+weapon,sp/m203_m4_silencer 
+weapon,sp/m203_m4_silencer_reflex 
+weapon,sp/m203_m4_silencer_reflex 
+weapon,sp/m14_scoped
+weapon,sp/m14_scoped_ghil
+weapon,sp/m14_scoped_woodland
+weapon,sp/g3
+weapon,sp/g36c
+weapon,sp/mp44
+weapon,sp/mp5
+weapon,sp/mp5_silencer 
+weapon,sp/mp5_silencer_reflex	 
+weapon,sp/skorpion
+weapon,sp/uzi
+weapon,sp/uzi_sd 
+weapon,sp/ak74u
+weapon,sp/p90
+weapon,sp/p90_silencer 
+weapon,sp/saw
+weapon,sp/rpd
+weapon,sp/m60e4
+weapon,sp/m40a3
+weapon,sp/dragunov
+weapon,sp/remington700
+weapon,sp/barrett
+weapon,sp/winchester1200
+weapon,sp/m1014
+weapon,sp/smoke_grenade_american
+weapon,sp/airstrike_support
+weapon,sp/hind_turret
+
+xmodel,viewmodel_base_viewhands
+xmodel,viewhands_player_usmc
+xmodel,vehicle_uav_static
+xmodel,vehicle_ac130_low
+xmodel,vehicle_mig29_desert_static
+xmodel,vehicle_mig29_missile_alamo
+xmodel,tag_flash
+
+fx,misc/tracer_incoming
+fx,smoke/smoke_grenade_11sec_mp
+fx,survival/red_smoke
+fx,misc/ui_pickup_available
+fx,misc/ui_pickup_unavailable
+fx,fire/jet_afterburner
+fx,smoke/jet_contrail
+fx,smoke/damaged_vehicle_smoke
+fx,survival/vehicle_damaged_black_smoke
+
+xmodel,vehicle_mi24p_hind_desert
+xmodel,vehicle_mi24p_hind_woodland
+xmodel,vehicle_mi17_woodland_fly
+xmodel,vehicle_blackhawk
+xmodel,rope_test_ri
+xmodel,rope_test
+xanim,fastrope_fall
+xanim,bh_8_drop
+xanim,bh_8_idle
+xanim,bh_7_drop
+xanim,bh_7_idle
+xanim,bh_6_drop
+xanim,bh_6_idle
+xanim,bh_5_drop
+xanim,bh_5_idle
+xanim,bh_4_drop
+xanim,bh_4_idle
+xanim,bh_2_drop
+xanim,bh_2_idle
+xanim,bh_1_drop
+xanim,bh_1_idle
+xanim,bh_copilot_idle
+xanim,bh_pilot_idle
+xanim,mi17_8_drop
+xanim,mi17_8_idle
+xanim,mi17_7_drop
+xanim,mi17_7_idle
+xanim,mi17_6_drop
+xanim,mi17_6_idle
+xanim,mi17_5_drop
+xanim,mi17_5_idle
+xanim,mi17_4_drop
+xanim,mi17_4_idle
+xanim,mi17_3_drop
+xanim,mi17_3_idle
+xanim,mi17_2_drop
+xanim,mi17_2_idle
+xanim,mi17_1_idle
+xanim,mi17_1_drop
+xanim,helicopter_pilot2_twitch_radio
+xanim,helicopter_pilot2_twitch_lookoutside
+xanim,helicopter_pilot2_twitch_clickpannel
+xanim,helicopter_pilot2_idle
+xanim,helicopter_pilot1_twitch_lookoutside
+xanim,helicopter_pilot1_twitch_lookback
+xanim,helicopter_pilot1_twitch_clickpannel
+xanim,helicopter_pilot1_idle
+xanim,mi17_rope_drop_ri
+xanim,mi17_rope_idle_ri
+xanim,mi17_rope_drop_le
+xanim,mi17_rope_idle_le
+xanim,bh_rope_drop_ri
+xanim,bh_rope_idle_ri
+xanim,bh_rope_drop_le
+xanim,bh_rope_idle_le
+xanim,bh_rotors
+xanim,bh_idle
+xanim,mi17_heli_rotors
+xanim,mi17_heli_idle
+xanim,bh_player_drop
+xanim,bh_player_idle
+fx,fire/fire_smoke_trail_l
+fx,explosions/aerial_explosion
+fx,explosions/helicopter_explosion
+fx,misc/aircraft_light_cockpit_red
+fx,misc/aircraft_light_cockpit_blue
+fx,misc/aircraft_light_white_blink
+fx,misc/aircraft_light_wingtip_green
+fx,misc/aircraft_light_wingtip_red
+fx,explosions/helicopter_explosion_mi17_woodland_low
+fx,misc/aircraft_light_red_blink
+fx,explosions/helicopter_explosion_hind_woodland
+fx,explosions/helicopter_explosion_hind_desert
+
+rawfile,animscripts/dog_init.gsc
+rawfile,animscripts/dog_combat.gsc
+rawfile,animscripts/dog_death.gsc
+rawfile,animscripts/dog_pain.gsc
+rawfile,animscripts/dog_move.gsc
+rawfile,animscripts/dog_scripted.gsc
+rawfile,animscripts/dog_stop.gsc
+rawfile,animscripts/dog_flashed.gsc
+material,hud_dog_melee
+fx,impacts/deathfx_dogbite
+fx,impacts/deathfx_bloodpool_view
+xanim,ai_attacked_german_shepherd_05_death_a
+xanim,ai_attacked_german_shepherd_04_getup_a
+xanim,ai_attacked_german_shepherd_04_middle_a
+xanim,ai_attacked_german_shepherd_03_shoot_a
+xanim,ai_attacked_german_shepherd_03_push_a
+xanim,ai_attacked_german_shepherd_02_getup_a
+xanim,ai_attacked_german_shepherd_02_idle_a
+xanim,ai_attacked_german_shepherd_01_start_a
+xanim,german_shepherd_player_neck_miss
+xanim,german_shepherd_player_neck_snap
+xanim,german_shepherd_walk
+xanim,german_shepherd_traverse_up_80
+xanim,german_shepherd_traverse_up_40
+xanim,german_shepherd_traverse_down_40
+xanim,german_shepherd_attack_player_miss_turnl
+xanim,german_shepherd_attack_player_miss_turnr
+xanim,german_shepherd_attack_ai_05_kill_a
+xanim,german_shepherd_attack_ai_04_middle_a
+xanim,german_shepherd_attack_ai_03_shot_a
+xanim,german_shepherd_attack_ai_03_pushed_a
+xanim,german_shepherd_attack_ai_02_idle_a
+xanim,german_shepherd_attack_ai_01_start_a
+xanim,german_shepherd_run_stop
+xanim,german_shepherd_run_pain
+xanim,german_shepherd_run_jump_window_40
+xanim,german_shepherd_run_jump_40
+xanim,german_shepherd_run_attack
+xanim,german_shepherd_attack_player_miss
+xanim,german_shepherd_run_lean_r
+xanim,german_shepherd_run_lean_l
+xanim,german_shepherd_run
+xanim,german_shepherd_run_start
+xanim,german_shepherd_attackidle_growl
+xanim,german_shepherd_attackidle_bark
+xanim,german_shepherd_attackidle
+xanim,german_shepherd_idle
+xanim,german_shepherd_death_front
+xanim,german_shepherd_attack_player_late
+xanim,german_shepherd_attack_player
+xanim,german_shepherd_attack_look_up
+xanim,german_shepherd_look_up
+xanim,german_shepherd_attack_look_left
+xanim,german_shepherd_look_left
+xanim,german_shepherd_attack_look_right
+xanim,german_shepherd_look_right
+xanim,german_shepherd_attack_look_down
+xanim,german_shepherd_look_down
+xanim,void_loop
+xanim,player_view_dog_knockdown_neck_miss
+xanim,player_view_dog_knockdown_neck_snap
+xanim,player_view_dog_knockdown_saved
+xanim,player_view_dog_knockdown_late
+xanim,player_view_dog_knockdown

@@ -1,0 +1,26 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"classname" "worldspawn"
+}
+// entity 1
+{
+"targetname" "surv_ending_trigg"
+"classname" "trigger_use_touch"
+// brush 0
+{
+ ( 0 48 32 ) ( -32 48 32 ) ( -32 16 32 ) trigger 64 64 56 -32 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -32 8 80 ) ( -32 40 80 ) ( 0 40 80 ) trigger 64 64 56 -32 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -32 -32 48 ) ( 0 -32 48 ) ( 0 -32 40 ) trigger 64 64 56 -48 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 8 80 ) ( 0 40 80 ) ( 0 40 72 ) trigger 64 64 32 -48 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 40 48 ) ( -32 40 48 ) ( -32 40 40 ) trigger 64 64 56 -48 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -40 48 48 ) ( -40 16 48 ) ( -40 16 40 ) trigger 64 64 32 -48 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+}
+// entity 2
+{
+"origin" "0.0 0.0 0.0"
+"classname" "script_origin"
+}

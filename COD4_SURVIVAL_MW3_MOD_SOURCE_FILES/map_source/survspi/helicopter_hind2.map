@@ -1,0 +1,141 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"classname" "worldspawn"
+// brush 0
+{
+ ( 10944 32 16 ) ( 10880 32 16 ) ( 10880 -32 16 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 10880 -40 96 ) ( 10944 -40 96 ) ( 10944 -40 32 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 10952 -32 96 ) ( 10952 32 96 ) ( 10952 32 32 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 10944 40 96 ) ( 10880 40 96 ) ( 10880 40 32 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 10872 32 96 ) ( 10872 -32 96 ) ( 10872 -32 32 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 10880 32 24 ) ( 10944 32 24 ) ( 10880 -32 24 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 1
+{
+ ( 10880 -32 136 ) ( 10880 32 136 ) ( 10944 32 136 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 10880 -40 96 ) ( 10944 -40 96 ) ( 10944 -40 32 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 10952 -32 96 ) ( 10952 32 96 ) ( 10952 32 32 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 10944 40 96 ) ( 10880 40 96 ) ( 10880 40 32 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 10872 32 96 ) ( 10872 -32 96 ) ( 10872 -32 32 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 10880 32 128 ) ( 10880 -32 128 ) ( 10944 32 128 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 2
+{
+ ( 10944 32 16 ) ( 10880 32 16 ) ( 10880 -32 16 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 10880 -32 136 ) ( 10880 32 136 ) ( 10944 32 136 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 10880 -40 96 ) ( 10944 -40 96 ) ( 10944 -40 32 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 10952 -32 96 ) ( 10952 32 96 ) ( 10952 32 32 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 10872 32 96 ) ( 10872 -32 96 ) ( 10872 -32 32 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 10944 -32 96 ) ( 10880 -32 96 ) ( 10944 -32 32 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 3
+{
+ ( 10944 32 16 ) ( 10880 32 16 ) ( 10880 -32 16 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 10880 -32 136 ) ( 10880 32 136 ) ( 10944 32 136 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 10880 -40 96 ) ( 10944 -40 96 ) ( 10944 -40 32 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 10952 -32 96 ) ( 10952 32 96 ) ( 10952 32 32 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 10944 40 96 ) ( 10880 40 96 ) ( 10880 40 32 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 10944 32 96 ) ( 10944 -32 96 ) ( 10944 32 32 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 4
+{
+ ( 10944 32 16 ) ( 10880 32 16 ) ( 10880 -32 16 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 10880 -32 136 ) ( 10880 32 136 ) ( 10944 32 136 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 10952 -32 96 ) ( 10952 32 96 ) ( 10952 32 32 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 10944 40 96 ) ( 10880 40 96 ) ( 10880 40 32 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 10872 32 96 ) ( 10872 -32 96 ) ( 10872 -32 32 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 10880 32 96 ) ( 10944 32 96 ) ( 10880 32 32 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 5
+{
+ ( 10944 32 16 ) ( 10880 32 16 ) ( 10880 -32 16 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 10880 -32 136 ) ( 10880 32 136 ) ( 10944 32 136 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 10880 -40 96 ) ( 10944 -40 96 ) ( 10944 -40 32 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 10944 40 96 ) ( 10880 40 96 ) ( 10880 40 32 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 10872 32 96 ) ( 10872 -32 96 ) ( 10872 -32 32 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 10880 -32 96 ) ( 10880 32 96 ) ( 10880 -32 32 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 6
+{
+ ( 0 8 888 ) ( 0 -8 888 ) ( 9984 -8 -8 ) vehicle_trigger 64 64 -8 -2736 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 9984 8 8 ) ( 9984 -8 8 ) ( 0 -8 904 ) vehicle_trigger 64 64 -8 -2736 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -8 904 ) ( 24 -8 904 ) ( 24 -8 888 ) vehicle_trigger 64 64 -8 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 9984 -8 8 ) ( 9984 8 8 ) ( 9984 8 -8 ) vehicle_trigger 64 64 2736 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 24 8 904 ) ( 0 8 904 ) ( 0 8 888 ) vehicle_trigger 64 64 -8 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -8 888 ) ( 0 8 888 ) ( 0 8 904 ) vehicle_trigger 64 64 2736 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+}
+// entity 1
+{
+"targetname" "auto26"
+"target" "enemy_heli_enter5"
+"radius" "250"
+"radious" "10"
+"origin" "9984.0 0.0 0.0"
+"classname" "script_origin"
+"speed" "500"
+"_color" "0.8 0 0"
+"angles" "0 180 0"
+"height" "1000"
+}
+// entity 2
+{
+"height" "500"
+"script_noteworthy" "enemy_heli_enter_nw5"
+"angles" "0 180 0"
+"origin" "0.0 0.0 896.0"
+"classname" "script_origin"
+"speed" "500"
+"radius" "5000"
+"_color" "0.8 0 0"
+"targetname" "enemy_heli_enter5"
+}
+// entity 3
+{
+"angles" "0 180 0"
+"spawnflags" "1"
+"origin" "10912.0 0.0 32.0"
+"export" "1"
+"model" "body_complete_sp_spetsnaz_boris"
+"classname" "actor_enemy_merc_AR_ak47"
+}
+// entity 4
+{
+"lookahead" "1"
+"spawnflags" "112"
+"classname" "script_vehicle"
+"model" "vehicle_mi24p_hind_woodland"
+"origin" "10424.0 16.0 144.0"
+"script_team" "axis"
+"vehicletype" "hind"
+"targetname" "hind_heli2"
+"script_vehicleride" "7"
+"script_vehiclespawngroup" "7"
+"angles" "0 180 0"
+"target" "auto26"
+}
+// entity 5
+{
+"targetname" "enemy_heli_trigger7"
+"classname" "trigger_damage"
+// brush 0
+{
+ ( 10680 272 336 ) ( 10680 -240 336 ) ( 10168 -240 336 ) trigger 64 64 1272 -9808 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 10168 -240 208 ) ( 10680 -240 208 ) ( 10680 272 208 ) trigger 64 64 1272 -9808 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 10680 16 208 ) ( 10680 16 336 ) ( 10680 272 336 ) trigger 64 64 9808 -464 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 10646 144 208 ) ( 10646 144 336 ) ( 10518 366 336 ) trigger 64 64 9808 -464 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 10552 238 208 ) ( 10552 238 336 ) ( 10330 366 336 ) trigger 64 64 1272 -464 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 10424 272 208 ) ( 10424 272 336 ) ( 10168 272 336 ) trigger 64 64 1272 -464 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 10296 238 208 ) ( 10296 238 336 ) ( 10074 110 336 ) trigger 64 64 1272 -464 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 10202 144 208 ) ( 10202 144 336 ) ( 10074 -78 336 ) trigger 64 64 9808 -464 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 10168 16 208 ) ( 10168 16 336 ) ( 10168 -240 336 ) trigger 64 64 9808 -464 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 10202 -112 208 ) ( 10202 -112 336 ) ( 10330 -334 336 ) trigger 64 64 9808 -464 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 10296 -206 208 ) ( 10296 -206 336 ) ( 10518 -334 336 ) trigger 64 64 1272 -464 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 10424 -240 208 ) ( 10424 -240 336 ) ( 10680 -240 336 ) trigger 64 64 1272 -464 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 10552 -206 208 ) ( 10552 -206 336 ) ( 10774 -78 336 ) trigger 64 64 1272 -464 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 10646 -112 208 ) ( 10646 -112 336 ) ( 10774 110 336 ) trigger 64 64 9808 -464 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+}

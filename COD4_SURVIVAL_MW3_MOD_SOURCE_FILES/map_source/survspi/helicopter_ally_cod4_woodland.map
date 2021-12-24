@@ -1,0 +1,239 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"classname" "worldspawn"
+// brush 0
+{
+ ( 120 10944 0 ) ( -104 10944 0 ) ( -104 10664 0 ) caulk 64 64 -16 1272 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -128 10816 144 ) ( 96 10816 144 ) ( 96 10816 64 ) caulk 64 64 -16 -224 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 88 10664 144 ) ( 88 10944 144 ) ( 88 10944 64 ) caulk 64 64 -1272 -224 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 112 10944 144 ) ( -112 10944 144 ) ( -112 10944 64 ) caulk 64 64 -16 -224 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -112 10944 144 ) ( -112 10664 144 ) ( -112 10664 64 ) caulk 64 64 -1272 -224 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -104 10944 8 ) ( 120 10944 8 ) ( -104 10664 8 ) caulk 64 64 -16 1272 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 1
+{
+ ( 120 10944 0 ) ( -104 10944 0 ) ( -104 10664 0 ) caulk 64 64 -16 1272 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -128 10816 144 ) ( 96 10816 144 ) ( 96 10816 64 ) caulk 64 64 -16 -224 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 88 10664 144 ) ( 88 10944 144 ) ( 88 10944 64 ) caulk 64 64 -1272 -224 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -112 10944 144 ) ( -112 10664 144 ) ( -112 10664 64 ) caulk 64 64 -1272 -224 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -96 10944 112 ) ( 128 10944 112 ) ( -96 10664 112 ) caulk 64 64 -16 1272 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 96 10824 144 ) ( -128 10824 144 ) ( 96 10824 64 ) caulk 64 64 -16 -224 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 2
+{
+ ( 120 10944 0 ) ( -104 10944 0 ) ( -104 10664 0 ) caulk 64 64 -16 1272 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -128 10816 144 ) ( 96 10816 144 ) ( 96 10816 64 ) caulk 64 64 -16 -224 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 88 10664 144 ) ( 88 10944 144 ) ( 88 10944 64 ) caulk 64 64 -1272 -224 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 112 10944 144 ) ( -112 10944 144 ) ( -112 10944 64 ) caulk 64 64 -16 -224 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -96 10944 112 ) ( 128 10944 112 ) ( -96 10664 112 ) caulk 64 64 -16 1272 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 80 10944 144 ) ( 80 10664 144 ) ( 80 10944 64 ) caulk 64 64 -1272 -224 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 3
+{
+ ( 120 10944 0 ) ( -104 10944 0 ) ( -104 10664 0 ) caulk 64 64 -16 1272 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 88 10664 144 ) ( 88 10944 144 ) ( 88 10944 64 ) caulk 64 64 -1272 -224 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 112 10944 144 ) ( -112 10944 144 ) ( -112 10944 64 ) caulk 64 64 -16 -224 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -112 10944 144 ) ( -112 10664 144 ) ( -112 10664 64 ) caulk 64 64 -1272 -224 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -96 10944 112 ) ( 128 10944 112 ) ( -96 10664 112 ) caulk 64 64 -16 1272 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -112 10936 144 ) ( 112 10936 144 ) ( -112 10936 64 ) caulk 64 64 -16 -224 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 4
+{
+ ( 120 10944 0 ) ( -104 10944 0 ) ( -104 10664 0 ) caulk 64 64 -16 1272 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -128 10816 144 ) ( 96 10816 144 ) ( 96 10816 64 ) caulk 64 64 -16 -224 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 112 10944 144 ) ( -112 10944 144 ) ( -112 10944 64 ) caulk 64 64 -16 -224 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -112 10944 144 ) ( -112 10664 144 ) ( -112 10664 64 ) caulk 64 64 -1272 -224 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -96 10944 112 ) ( 128 10944 112 ) ( -96 10664 112 ) caulk 64 64 -16 1272 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -104 10664 144 ) ( -104 10944 144 ) ( -104 10664 64 ) caulk 64 64 -1272 -224 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 5
+{
+ ( -128 10816 144 ) ( 96 10816 144 ) ( 96 10816 64 ) caulk 64 64 -16 -224 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 88 10664 144 ) ( 88 10944 144 ) ( 88 10944 64 ) caulk 64 64 -1272 -224 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 112 10944 144 ) ( -112 10944 144 ) ( -112 10944 64 ) caulk 64 64 -16 -224 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -112 10944 144 ) ( -112 10664 144 ) ( -112 10664 64 ) caulk 64 64 -1272 -224 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -96 10944 112 ) ( 128 10944 112 ) ( -96 10664 112 ) caulk 64 64 -16 1272 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 128 10944 104 ) ( -96 10944 104 ) ( -96 10664 104 ) caulk 64 64 -16 1272 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 6
+{
+ ( -8 0 888 ) ( 8 0 888 ) ( 8 9984 -8 ) vehicle_trigger 64 64 -8 -2736 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -8 9984 8 ) ( 8 9984 8 ) ( 8 0 904 ) vehicle_trigger 64 64 -8 -2736 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 8 0 904 ) ( 8 24 904 ) ( 8 24 888 ) vehicle_trigger 64 64 -8 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 8 9984 8 ) ( -8 9984 8 ) ( -8 9984 -8 ) vehicle_trigger 64 -64 2736 0 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -8 24 904 ) ( -8 0 904 ) ( -8 0 888 ) vehicle_trigger 64 64 -8 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 8 0 888 ) ( -8 0 888 ) ( -8 0 904 ) vehicle_trigger 64 -64 2736 0 -180 0 lightmap_gray 16384 16384 0 0 0 0
+}
+}
+// entity 1
+{
+"script_forcecolor" "b"
+"script_startingposition" "5"
+"script_threatbiasgroup" "allies"
+"script_noteworthy" "tf4"
+"script_vehicleride" "2"
+"angles" "0 270 0"
+"classname" "actor_ally_marine_woodland_smg_mp5"
+"model" "body_sp_usmc_force_a"
+"export" "1"
+"targetname" "task_force_team"
+"count" "9999"
+"spawnflags" "9"
+"origin" "48.0 10864.0 16.0"
+}
+// entity 2
+{
+"script_forcecolor" "b"
+"script_startingposition" "3"
+"script_threatbiasgroup" "allies"
+"script_noteworthy" "so2"
+"angles" "0 270 0"
+"classname" "actor_ally_sas_woodland_ar_m4grunt"
+"model" "body_sp_sas_woodland_assault_a"
+"export" "3"
+"origin" "-8.0 10904.0 16.0"
+"targetname" "spec_ops_team"
+"spawnflags" "9"
+"count" "9999"
+"script_vehicleride" "1"
+}
+// entity 3
+{
+"target" "auto1"
+"targetname" "tf_heli"
+"script_vehicleride" "2"
+"lookahead" "1"
+"model" "vehicle_blackhawk"
+"classname" "script_vehicle"
+"script_vehiclespawngroup" "2"
+"script_team" "allies"
+"vehicletype" "blackhawk"
+"angles" "0 270 0"
+"origin" "136.0 10352.0 144.0"
+"script_godmode" "1"
+"script_ignoreme" "1"
+}
+// entity 4
+{
+"targetname" "auto1"
+"angles" "0 270 0"
+"_color" "0 0.8 0.8"
+"speed" "500"
+"classname" "script_origin"
+"origin" "0.0 9984.0 0.0"
+"radious" "10"
+"radius" "250"
+"target" "ally_heli_enter1"
+"height" "1000"
+}
+// entity 5
+{
+"height" "500"
+"script_noteworthy" "ally_heli_enter_nw1"
+"targetname" "ally_heli_enter1"
+"angles" "0 270 0"
+"origin" "0.0 0.0 896.0"
+"classname" "script_origin"
+"speed" "500"
+"radius" "5000"
+"_color" "0 0.8 0.8"
+}
+// entity 6
+{
+"classname" "actor_ally_marine_woodland_ar_m4grunt"
+"model" "body_sp_usmc_force_a"
+"export" "2"
+"origin" "-72.0 10864.0 16.0"
+"targetname" "task_force_team"
+"spawnflags" "9"
+"count" "9999"
+"angles" "0 270 0"
+"script_vehicleride" "2"
+"script_noteworthy" "tf1"
+"script_threatbiasgroup" "allies"
+"script_startingposition" "2"
+"script_forcecolor" "b"
+}
+// entity 7
+{
+"count" "9999"
+"spawnflags" "9"
+"targetname" "task_force_team"
+"origin" "-32.0 10864.0 16.0"
+"export" "7"
+"model" "body_sp_usmc_force_a"
+"classname" "actor_ally_marine_woodland_smg_mp5"
+"angles" "0 270 0"
+"script_vehicleride" "2"
+"script_noteworthy" "tf2"
+"script_threatbiasgroup" "allies"
+"script_startingposition" "3"
+"script_forcecolor" "b"
+}
+// entity 8
+{
+"script_vehicleride" "1"
+"count" "9999"
+"spawnflags" "9"
+"targetname" "spec_ops_team"
+"origin" "32.0 10904.0 16.0"
+"export" "4"
+"model" "body_sp_sas_woodland_assault_a"
+"classname" "actor_ally_sas_woodland_smg_mp5"
+"angles" "0 270 0"
+"script_noteworthy" "so3"
+"script_threatbiasgroup" "allies"
+"script_startingposition" "4"
+"script_forcecolor" "b"
+}
+// entity 9
+{
+"script_vehicleride" "1"
+"classname" "actor_ally_sas_woodland_smg_mp5"
+"model" "body_sp_sas_woodland_assault_a"
+"export" "5"
+"origin" "-48.0 10904.0 16.0"
+"targetname" "spec_ops_team"
+"spawnflags" "9"
+"count" "9999"
+"angles" "0 270 0"
+"script_noteworthy" "so1"
+"script_threatbiasgroup" "allies"
+"script_startingposition" "2"
+"script_forcecolor" "b"
+}
+// entity 10
+{
+"script_forcecolor" "b"
+"script_startingposition" "4"
+"script_threatbiasgroup" "allies"
+"script_noteworthy" "tf3"
+"script_vehicleride" "2"
+"angles" "0 270 0"
+"classname" "actor_ally_marine_woodland_ar_m4grunt"
+"model" "body_sp_usmc_force_a"
+"export" "6"
+"origin" "8.0 10864.0 16.0"
+"targetname" "task_force_team"
+"spawnflags" "9"
+"count" "9999"
+}
+// entity 11
+{
+"targetname" "sas_heli"
+"script_vehicleride" "1"
+"lookahead" "1"
+"model" "vehicle_blackhawk"
+"classname" "script_vehicle"
+"script_vehiclespawngroup" "1"
+"script_team" "allies"
+"vehicletype" "blackhawk"
+"angles" "0 270 0"
+"origin" "-136.0 10352.0 144.0"
+"script_godmode" "1"
+"script_ignoreme" "1"
+"target" "auto1"
+}

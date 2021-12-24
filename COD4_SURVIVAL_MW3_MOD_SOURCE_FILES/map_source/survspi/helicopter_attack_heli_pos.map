@@ -1,0 +1,34 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"classname" "worldspawn"
+}
+// entity 1
+{
+"height" "1000"
+"script_anglevehicle" "1"
+"_color" "1 0 0"
+"radius" "1000"
+"speed" "250"
+"classname" "script_origin"
+"origin" "0.0 0.0 896.0"
+"targetname" "attack_heli_org"
+"script_noteworthy" "attack_heli_org_nw"
+"angles" "15 0 0"
+}
+// entity 2
+{
+"classname" "func_group"
+// brush 0
+{
+  contents nonColliding;
+ ( 92 -4 0 ) ( 92 4 0 ) ( -76 4 0 ) vehicle_trigger 64 64 4 -12 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -52 4 896 ) ( 116 4 896 ) ( 116 -4 896 ) vehicle_trigger 64 64 4 -12 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -4 4 -64 ) ( -4 -4 -64 ) ( -4 -4 -72 ) vehicle_trigger 64 64 12 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 172 -4 1416 ) ( 340 -4 1416 ) ( 340 -4 1408 ) vehicle_trigger 64 64 4 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 4 -4 88 ) ( 4 4 88 ) ( 4 4 80 ) vehicle_trigger 64 64 12 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 84 4 -160 ) ( -84 4 -160 ) ( -84 4 -168 ) vehicle_trigger 64 64 4 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+}

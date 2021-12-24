@@ -1,0 +1,17 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"classname" "worldspawn"
+}
+// entity 1
+{
+"script_noteworthy" "crash_org"
+"height" "1500"
+"_color" "1.000000 0.850980 0.776471"
+"radius" "1500"
+"origin" "0.0 0.0 0.0"
+"targetname" "helicopter_crash_location"
+"classname" "script_origin"
+}

@@ -1,0 +1,205 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"classname" "worldspawn"
+}
+// entity 1
+{
+"targetname" "enemy_spawn_origin"
+"origin" "0.0 0.0 0.0"
+"angles" "0 360 0"
+"classname" "script_origin"
+}
+// entity 2
+{
+"script_threatbiasgroup" "enemy"
+"angles" "0 2.50448e-006 0"
+"origin" "16.0 16.0 16.0"
+"count" "99999"
+"spawnflags" "9"
+"targetname" "force2"
+"export" "10"
+"model" "mw3_body_russ_army_b"
+"classname" "actor_enemy_survival_mp5"
+}
+// entity 3
+{
+"classname" "actor_enemy_survival_shotgun"
+"model" "mw3_body_russ_rebel_a"
+"export" "25"
+"targetname" "force1"
+"spawnflags" "9"
+"count" "99999"
+"origin" "16.0 16.0 12.0"
+"angles" "0 2.50448e-006 0"
+"script_threatbiasgroup" "enemy"
+}
+// entity 4
+{
+"script_threatbiasgroup" "enemy"
+"angles" "0 2.50448e-006 0"
+"origin" "16.0 16.0 20.0"
+"count" "99999"
+"spawnflags" "9"
+"targetname" "force3"
+"export" "40"
+"model" "mw3_body_russ_army_c_woodland"
+"classname" "actor_enemy_survival_ak47"
+}
+// entity 5
+{
+"script_threatbiasgroup" "enemy"
+"angles" "0 2.50448e-006 0"
+"origin" "16.0 16.0 24.0"
+"count" "99999"
+"spawnflags" "9"
+"targetname" "force4"
+"export" "70"
+"model" "mw3_body_russ_black_a"
+"classname" "actor_enemy_survival_acr"
+}
+// entity 6
+{
+"script_threatbiasgroup" "enemy"
+"angles" "0 2.50448e-006 0"
+"origin" "16.0 -16.0 16.0"
+"count" "99999"
+"spawnflags" "9"
+"targetname" "force2"
+"export" "71"
+"model" "mw3_body_russ_army_b"
+"classname" "actor_enemy_survival_mp5"
+}
+// entity 7
+{
+"script_threatbiasgroup" "enemy"
+"angles" "0 2.50448e-006 0"
+"origin" "16.0 -16.0 20.0"
+"count" "99999"
+"spawnflags" "9"
+"targetname" "force3"
+"export" "73"
+"model" "mw3_body_russ_army_c_woodland"
+"classname" "actor_enemy_survival_ak47"
+}
+// entity 8
+{
+"script_threatbiasgroup" "enemy"
+"angles" "0 2.50448e-006 0"
+"origin" "16.0 -16.0 24.0"
+"count" "99999"
+"spawnflags" "9"
+"targetname" "force4"
+"export" "74"
+"model" "mw3_body_russ_black_a"
+"classname" "actor_enemy_survival_acr"
+}
+// entity 9
+{
+"script_threatbiasgroup" "enemy"
+"angles" "0 2.50448e-006 0"
+"origin" "-16.0 16.0 16.0"
+"count" "99999"
+"spawnflags" "9"
+"targetname" "force2"
+"export" "76"
+"model" "mw3_body_russ_army_b"
+"classname" "actor_enemy_survival_mp5"
+}
+// entity 10
+{
+"classname" "actor_enemy_survival_shotgun"
+"model" "mw3_body_russ_rebel_a"
+"export" "77"
+"targetname" "force1"
+"spawnflags" "9"
+"count" "99999"
+"origin" "-16.0 16.0 12.0"
+"angles" "0 2.50448e-006 0"
+"script_threatbiasgroup" "enemy"
+}
+// entity 11
+{
+"script_threatbiasgroup" "enemy"
+"angles" "0 2.50448e-006 0"
+"origin" "-16.0 16.0 20.0"
+"count" "99999"
+"spawnflags" "9"
+"targetname" "force3"
+"export" "78"
+"model" "mw3_body_russ_army_c_woodland"
+"classname" "actor_enemy_survival_ak47"
+}
+// entity 12
+{
+"script_threatbiasgroup" "enemy"
+"angles" "0 2.50448e-006 0"
+"origin" "-16.0 16.0 24.0"
+"count" "99999"
+"spawnflags" "9"
+"targetname" "force4"
+"export" "79"
+"model" "mw3_body_russ_black_a"
+"classname" "actor_enemy_survival_acr"
+}
+// entity 13
+{
+"origin" "-16.0 -16.0 12.0"
+"classname" "actor_enemy_dog"
+"model" "german_sheperd_dog"
+"export" "81"
+"spawnflags" "9"
+"targetname" "dog_force"
+"count" "99999"
+"script_threatbiasgroup" "enemy"
+}
+// entity 14
+{
+"script_threatbiasgroup" "enemy"
+"angles" "0 2.50448e-006 0"
+"origin" "16.0 16.0 28.0"
+"count" "99999"
+"spawnflags" "9"
+"targetname" "force5"
+"export" "55"
+"model" "mw3_body_russ_army_c_woodland"
+"classname" "actor_enemy_survival_fad"
+}
+// entity 15
+{
+"script_threatbiasgroup" "enemy"
+"angles" "0 2.50448e-006 0"
+"origin" "16.0 -16.0 28.0"
+"count" "99999"
+"spawnflags" "9"
+"targetname" "force5"
+"export" "75"
+"model" "mw3_body_russ_army_c_woodland"
+"classname" "actor_enemy_survival_fad"
+}
+// entity 16
+{
+"script_threatbiasgroup" "enemy"
+"angles" "0 2.50448e-006 0"
+"origin" "-16.0 16.0 28.0"
+"count" "99999"
+"spawnflags" "9"
+"targetname" "force5"
+"export" "80"
+"model" "mw3_body_russ_army_c_woodland"
+"classname" "actor_enemy_survival_fad"
+}
+// entity 17
+{
+"script_threatbiasgroup" "enemy"
+"angles" "0 2.50448e-006 0"
+"origin" "16.0 -16.0 12.0"
+"count" "99999"
+"spawnflags" "9"
+"targetname" "force1"
+"export" "72"
+"model" "mw3_body_russ_rebel_a"
+"classname" "actor_enemy_survival_shotgun"
+}
