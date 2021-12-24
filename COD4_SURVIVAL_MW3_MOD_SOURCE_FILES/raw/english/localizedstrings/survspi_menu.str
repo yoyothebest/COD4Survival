@@ -1,0 +1,59 @@
+VERSION             "1"
+CONFIG              "F:\projects\mk\bin\StringEd\StringEd.cfg"
+FILENOTES           ""
+
+REFERENCE           YES_MENU
+LANG_ENGLISH        "Yes"
+
+REFERENCE           NO_MENU
+LANG_ENGLISH        "No"
+
+REFERENCE           NULL
+LANG_ENGLISH        " "
+
+
+
+
+
+REFERENCE           LEVELS
+LANG_ENGLISH        "Survival Maps"
+
+REFERENCE           MISS_CAP
+LANG_ENGLISH        "Survival Maps"
+
+
+REFERENCE           NA_MAP
+LANG_ENGLISH        "This map is not available yet."
+
+REFERENCE           START_MAP
+LANG_ENGLISH        "Play this map?"
+
+REFERENCE           WELLTOWN_TITLE
+LANG_ENGLISH        "Welltown"
+
+REFERENCE           WELLTOWN_DESC
+LANG_ENGLISH        "A small town filled with alleys, open streets and crossroads. A great basic example for Survival Maps."
+
+REFERENCE           VORTEX_TITLE
+LANG_ENGLISH        "Vortex"
+
+REFERENCE           VORTEX_DESC
+LANG_ENGLISH        "An old ranch sits threatened by the approach of a raging tornado with an open field stretches across the north."
+
+REFERENCE           UTURN_TITLE
+LANG_ENGLISH        "U-Turn"
+
+REFERENCE           UTURN_DESC
+LANG_ENGLISH        "A militarized highway cuts across a burning oil field, with damaged vehicles strewn about four vertical lanes."
+
+REFERENCE           LOOKOUT_TITLE
+LANG_ENGLISH        "Lookout"
+
+REFERENCE           LOOKOUT_DESC
+LANG_ENGLISH        "Remote outpost in Afghanistan. Tight sparse interiors linked by open lanes and overlooks."
+
+REFERENCE           COMING_SOON_DESC
+LANG_ENGLISH        "Coming Soon..."
+
+
+ENDMARKER

@@ -1,0 +1,251 @@
+#include "ui/menudef.h"
+#include "ui_mp/common_macro.inc"
+
+#define CHOICE_GROUP                "surv_spi"
+#define NO_BG_CLOSE                 1
+
+// required for inside-popup styles
+#include "ui_mp/menustyle.inc"
+#include "ui/choices_setup_common.menu"
+
+#undef CHOICE_HORIZONTAL_ALIGN
+#define CHOICE_HORIZONTAL_ALIGN	HORIZONTAL_ALIGN_CENTER
+#undef CHOICE_VERTICAL_ALIGN
+#define CHOICE_VERTICAL_ALIGN	VERTICAL_ALIGN_CENTER
+	
+// required for popup style
+#include "ui_mp/popupstyle.inc"
+#include "ui/choices_setup_popmenu.menu"
+
+
+//THIS MUST BE CALLED AFTER THE SCRIPTS ARE CALLED
+// setting longer buttons which in turn sets the width of the popup
+#undef CHOICE_SIZE_X
+#define CHOICE_SIZE_X			320
+
+//========================= MyMenuButton defines =========================
+
+/**
+ * RECTANGLES
+ *   The are being drawn from their top-left corner (alignment + origin) with their given size.
+ */
+#define WEAP_IMAGE_WIDTH    128
+#define WEAP_IMAGE_HEIGHT   64
+#define WEAP_IMAGE_RECT \
+    /* origin    */ ( CHOICE_POPUP_WIDTH - (CHOICE_POPUP_BORDER_X * 2) - WEAP_IMAGE_WIDTH ) \
+        ( CHOICE_POPUP_BORDER_Y) \
+    /* size      */ WEAP_IMAGE_WIDTH WEAP_IMAGE_HEIGHT \
+    /* alignment */ CHOICE_HORIZONTAL_ALIGN CHOICE_VERTICAL_ALIGN     
+
+
+
+#define SPI_WEAPON_IMAGE( itemIndex, imageArg ) \
+		itemDef \
+		{ \
+			style			WINDOW_STYLE_FILLED \
+			rect			WEAP_IMAGE_RECT \
+			backcolor		0.25 0.25 0.25 0.6  \
+			visible         when( localVarInt( ui_highlight ) == itemIndex && localVarString( ui_choicegroup ) == CHOICE_GROUP ); \
+			decoration \
+		}\
+		itemDef\
+		{\
+			style			WINDOW_STYLE_SHADER\
+			rect			WEAP_IMAGE_RECT\
+			background		"gradient_top"\
+			visible         when( localVarInt( ui_highlight ) == itemIndex && localVarString( ui_choicegroup ) == CHOICE_GROUP ); \
+			decoration\
+		}	\
+		itemDef \
+		{ \
+			name            imageArg \
+			style           WINDOW_STYLE_SHADER \
+			rect            WEAP_IMAGE_RECT \
+			exp             material( imageArg ) \
+			visible         when( localVarInt( ui_highlight ) == itemIndex && localVarString( ui_choicegroup ) == CHOICE_GROUP ); \
+			decoration \
+		} \
+
+
+
+#define WEAP_IMAGE_WIDTH_64    64
+#define WEAP_IMAGE_HEIGHT_64   64
+#define WEAP_IMAGE_RECT_64 \
+    /* origin    */ ( CHOICE_POPUP_WIDTH - (CHOICE_POPUP_BORDER_X * 2) - (WEAP_IMAGE_WIDTH_64*1.5) ) \
+        ( CHOICE_POPUP_BORDER_Y) \
+    /* size      */ WEAP_IMAGE_WIDTH_64 WEAP_IMAGE_HEIGHT_64 \
+    /* alignment */ CHOICE_HORIZONTAL_ALIGN CHOICE_VERTICAL_ALIGN     
+
+
+
+#define SPI_WEAPON_IMAGE_64( itemIndex, imageArg ) \
+		itemDef \
+		{ \
+			style			WINDOW_STYLE_FILLED \
+			rect			WEAP_IMAGE_RECT \
+			backcolor		0.25 0.25 0.25 0.6  \
+			visible         when( localVarInt( ui_highlight ) == itemIndex && localVarString( ui_choicegroup ) == CHOICE_GROUP ); \
+			decoration \
+		}\
+		itemDef\
+		{\
+			style			WINDOW_STYLE_SHADER\
+			rect			WEAP_IMAGE_RECT\
+			background		"gradient_top"\
+			visible         when( localVarInt( ui_highlight ) == itemIndex && localVarString( ui_choicegroup ) == CHOICE_GROUP ); \
+			decoration\
+		}	\
+		itemDef \
+		{ \
+			name            imageArg \
+			style           WINDOW_STYLE_SHADER \
+			rect            WEAP_IMAGE_RECT_64 \
+			exp             material( imageArg ) \
+			visible         when( localVarInt( ui_highlight ) == itemIndex && localVarString( ui_choicegroup ) == CHOICE_GROUP ); \
+			decoration \
+		} \
+
+
+
+#define SPI_CHOICE_BUTTON_VIS_NOHI( itemIndex, textArg, actionArg ) \
+    itemDef \
+    { \
+        type            ITEM_TYPE_BUTTON \
+        rect            CHOICE_RECT( itemIndex ) \
+        exp             text( textArg ); \
+        textfont        CHOICE_TEXTFONT \
+        textscale       CHOICE_TEXTSIZE \
+        textstyle       CHOICE_TEXTSTYLE \
+        textAlign       ITEM_ALIGN_MIDDLE_LEFT \
+        textAlignX      1 \
+        forecolor       CHOICE_TEXTCOLOR \
+        visible         1 \
+        CHOICE_SCRIPTS_ALL( itemIndex, actionArg, ;, ; ) \
+    }
+
+#define SPI_CHOICE_BUTTON_EXT( itemIndex, nameArg, costArg, actionArg ) \
+    CHOICE_BUTTON_BG( itemIndex, 1 ) \
+    CHOICE_HIGHLIGHT( itemIndex, 1 ) \
+    itemDef \
+    { \
+        type            ITEM_TYPE_TEXT \
+        rect            CHOICE_RECT( itemIndex ) \
+        exp             text( costArg ); \
+        textfont        CHOICE_TEXTFONT \
+        textscale       CHOICE_TEXTSIZE \
+        textstyle       CHOICE_TEXTSTYLE \
+        textAlign       ITEM_ALIGN_MIDDLE_RIGHT \
+        textAlignX      CHOICE_TEXT_OFFSET_X \
+        forecolor       CHOICE_TEXTCOLOR \
+        visible         1 \
+    } \
+    SPI_CHOICE_BUTTON_VIS_NOHI( itemIndex, nameArg, actionArg )
+
+#define SPI_CHOICE_BUTTON( itemIndex, textArg, actionArg ) \
+    CHOICE_BUTTON_BG( itemIndex, 1 ) \
+    CHOICE_HIGHLIGHT( itemIndex, 1 ) \
+    SPI_CHOICE_BUTTON_VIS_NOHI( itemIndex, textArg, actionArg )
+
+
+// Title Top Left
+#define CHOICE_POPMENU_TITLE_TOPLEFT( textArg ) \
+		CHOICE_POPMENU_TITLE_TOPLEFT_VIS( textArg, 1 )
+		
+#define CHOICE_POPMENU_TITLE_TOPLEFT_VIS( textArg, visArg ) \
+		itemDef \
+		{ \
+			type			ITEM_TYPE_BUTTON \
+			rect			CHOICE_POPUP_BORDER_X CHOICE_POPUP_BORDER_Y 100 100 CHOICE_HORIZONTAL_ALIGN CHOICE_VERTICAL_ALIGN  \
+			exp				text(textArg); \
+			textfont		UI_FONT_NORMAL \
+			textscale		CHOICE_POPUP_TITLE_TEXTSIZE \
+			textAlign		ITEM_ALIGN_TOP_LEFT \
+			textstyle		CHOICE_TEXTSTYLE \
+			forecolor		CHOICE_TEXTCOLOR \
+			visible			visArg \
+			decoration \
+		}
+		
+#define SPI_BACK_MONEY( itemIndex, textArg ) \
+    SPI_BACK_MONEY_VIS( itemIndex, textArg )
+
+#define SPI_BACK_MONEY_VIS( itemIndex, textArg ) \
+    itemDef \
+    { \
+        type            ITEM_TYPE_TEXT \
+        rect            CHOICE_RECT( itemIndex ) \
+        exp             text( textArg ); \
+        textfont        CHOICE_TEXTFONT \
+        textscale       CHOICE_TEXTSIZE \
+        textstyle       CHOICE_TEXTSTYLE \
+        textAlign       ITEM_ALIGN_MIDDLE_LEFT \
+        textAlignX      1 \
+        forecolor       CHOICE_TEXTCOLOR \
+        visible         1 \
+		decoration \
+    }
+
+
+//========================= Equipments =========================
+
+//------------------ Main -----------------------
+
+#define SHOP_ACTION( actionArg ) \
+    play "mouse_click"; \
+    close survspi_support; \
+    close survival_SU_PERKS_menu; \
+    actionArg
+
+	#define BACK_SHOP \
+    SHOP_ACTION( open survspi_support; )
+	
+	
+{
+	menuDef
+	{
+		CENTER_POPUP_SETUP( survspi_support, 10.5, scriptMenuResponse "close";, 1 )
+		
+		//CHOICE_POPMENU_TITLE( "@SURVSPI_SUPPORT_MENU" )
+		CHOICE_POPMENU_TITLE_TOPLEFT( "@SURVSPI_SUPPORT_MENU" )
+		
+	    SPI_WEAPON_IMAGE_64( 5, "specialty_twoprimaries" )
+	    SPI_WEAPON_IMAGE_64( 6, "icon_airstrike" )
+	    SPI_WEAPON_IMAGE_64( 7, "icon_ac130" )
+        SPI_WEAPON_IMAGE_64( 8, "icon_american" )
+        SPI_WEAPON_IMAGE_64( 9, "icon_riot" )
+        //SPI_WEAPON_IMAGE_64( 11, "faction_128_sas" )
+		
+		SPI_CHOICE_BUTTON( 5, "@SURVSPI_PERKS_MENU", SHOP_ACTION( open survival_SU_PERKS_menu; ) )
+		SPI_CHOICE_BUTTON_EXT( 6, "@SURVSPI_AIRSTRIKE_MENU","@SURVSPI_PRICE_2500", SHOP_ACTION( scriptMenuResponse "jet_strike"; ) )
+		SPI_CHOICE_BUTTON_EXT( 7, "@SURVSPI_AC130_MENU","@SURVSPI_PRICE_2500", SHOP_ACTION( scriptMenuResponse "ac130_strike"; ) )
+		SPI_CHOICE_BUTTON_EXT( 8, "@SURVSPI_TF_MENU","@SURVSPI_PRICE_3000", SHOP_ACTION( scriptMenuResponse "task_force"; ) )
+		SPI_CHOICE_BUTTON_EXT( 9, "@SURVSPI_SO_MENU","@SURVSPI_PRICE_5000", SHOP_ACTION( scriptMenuResponse "spec_ops"; ) )
+		//SPI_CHOICE_BUTTON_EXT( 10, "@SURVSPI_HR_MENU","@SURVSPI_PRICE_10000", SHOP_ACTION( scriptMenuResponse "hero_team"; ) )
+		CHOICE_SEPARATOR_VIS( 9, 1; )
+		CHOICE_BUTTON( 10.5, "@SURVSPI_BACK_MENU", SHOP_ACTION( scriptMenuResponse "close"; ) )
+        SPI_BACK_MONEY( 10.5, "^2$"+dvarString("survspi_score")  )
+		
+	}	
+
+
+	menuDef
+	{
+		CENTER_POPUP_SETUP( survival_SU_PERKS_menu, 9.5, BACK_SHOP, 1 )
+		CHOICE_POPMENU_TITLE_TOPLEFT( "@SURVSPI_EQ_PERKS_MENU" ) 
+		
+        SPI_WEAPON_IMAGE_64( 5, "specialty_longersprint" )
+        SPI_WEAPON_IMAGE_64( 6, "specialty_twoprimaries" )
+        //SPI_WEAPON_IMAGE_64( 7, "specialty_fastreload" ) // reload perk is unlikely to work on SP. it's here in case someone wants to fix or actually make it.
+
+		
+		SPI_CHOICE_BUTTON_EXT( 5, "@SURVSPI_SPRINT_MENU","@SURVSPI_PRICE_4000", SHOP_ACTION( scriptMenuResponse "sprint_perk"; ) )
+		SPI_CHOICE_BUTTON_EXT( 6, "@SURVSPI_OVERKILL_MENU","@SURVSPI_PRICE_5000", SHOP_ACTION( scriptMenuResponse "gun3_perk"; ) )
+		//SPI_CHOICE_BUTTON_EXT( 7, "@SURVSPI_FASTRELOAD_MENU","@SURVSPI_PRICE_3000", SHOP_ACTION( scriptMenuResponse "reload_perk"; ) )
+
+		CHOICE_SEPARATOR_VIS( 8, 1; )
+		CHOICE_BUTTON( 9.5, "@SURVSPI_BACK_MENU", BACK_SHOP )
+        SPI_BACK_MONEY( 9.5, "^2$"+dvarString("survspi_score")  )
+	}
+
+}
+

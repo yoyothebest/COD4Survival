@@ -1,0 +1,639 @@
+VERSION             "1"
+CONFIG              "F:\projects\mk\bin\StringEd\StringEd.cfg"
+FILENOTES           ""
+
+REFERENCE           YES_MENU
+LANG_ENGLISH        "Yes"
+
+REFERENCE           NO_MENU
+LANG_ENGLISH        "No"
+
+REFERENCE           NULL
+LANG_ENGLISH        " "
+
+
+REFERENCE           CURRENT_WAVE
+LANG_ENGLISH        "Wave: "
+
+REFERENCE           DOLLAR_SURV
+LANG_ENGLISH        "$ "
+
+REFERENCE           MONEY_SURV
+LANG_ENGLISH        "Money: "
+
+REFERENCE           ENEMIES_LEFT
+LANG_ENGLISH        "Enemies Left: "
+
+REFERENCE           WAVE_BEGIN
+LANG_ENGLISH        "Wave &&1!"
+
+REFERENCE           WAVE_COMPLETED
+LANG_ENGLISH        "Wave &&1 Completed!"
+
+REFERENCE           NEXT_WAVE_IN
+LANG_ENGLISH        "Next Wave in: &&1"
+
+REFERENCE           PRESS_TO_SKIP
+LANG_ENGLISH        "Press ^3Tab^7 to skip."
+
+REFERENCE           PRESS_TO_SKIP2
+LANG_ENGLISH        "Press ^3[{+scores}]^7 to skip."
+
+
+
+
+REFERENCE           OBJ_SURV
+LANG_ENGLISH        "Survive..."
+
+
+REFERENCE           MARKER
+LANG_ENGLISH        "Smoke Marker"
+
+
+REFERENCE           WEAP_ARMORY_TRIGG
+LANG_ENGLISH        "Press ^3&&1^7 to use Weapon Armory."
+
+REFERENCE           EQUIP_ARMORY_TRIGG
+LANG_ENGLISH        "Press ^3&&1^7 to use Equipment Armory."
+
+REFERENCE           AIRSUP_ARMORY_TRIGG
+LANG_ENGLISH        "Press ^3&&1^7 to use Air-Support Armory."
+
+
+
+
+
+REFERENCE           SQUAD_HOLD_TRIGG
+LANG_ENGLISH        "Press ^3&&1^7 to order squad to HOLD POSITION."
+
+
+REFERENCE           SQUAD_FOLLOW_TRIGG
+LANG_ENGLISH        "Press ^3&&1^7 to order squad to FOLLOW PLAYER."
+
+
+
+
+REFERENCE           WEAPONS_MENU
+LANG_ENGLISH        "WEAPONS ARMORY"
+
+
+REFERENCE           REFILL_AMMO_MENU
+LANG_ENGLISH        "Refill Ammo"
+
+
+
+REFERENCE           AR_MENU
+LANG_ENGLISH        "Assault Rifles"
+
+REFERENCE           SMG_MENU
+LANG_ENGLISH        "Sub Machine Guns"
+
+REFERENCE           LMG_MENU
+LANG_ENGLISH        "Light Machine Guns"
+
+REFERENCE           SR_MENU
+LANG_ENGLISH        "Sniper Rifles"
+
+REFERENCE           SG_MENU
+LANG_ENGLISH        "Shotguns"
+
+REFERENCE           HG_MENU
+LANG_ENGLISH        "Handguns"
+
+
+
+REFERENCE           BACK_MENU
+LANG_ENGLISH        "Back(^3ESC^7)"
+
+
+
+
+REFERENCE           AR_M16_MENU
+LANG_ENGLISH        "M16A4 Attachments"
+
+REFERENCE           AR_AK47_MENU
+LANG_ENGLISH        "AK47 Attachments"
+
+REFERENCE           AR_M4_MENU
+LANG_ENGLISH        "M4A1 Attachments"
+
+REFERENCE           SMG_MP5_MENU
+LANG_ENGLISH        "MP5 Attachments"
+
+REFERENCE           SMG_P90_MENU
+LANG_ENGLISH        "P90 Attachments"
+
+REFERENCE           SMG_UZI_MENU
+LANG_ENGLISH        "Mini-Uzi Attachments"
+
+REFERENCE           HG_USP_MENU
+LANG_ENGLISH        "USP Attachments"
+
+REFERENCE           SR_M21_MENU
+LANG_ENGLISH        "M14 Attachments"
+
+
+
+
+REFERENCE           M16_MENU
+LANG_ENGLISH        "M16A4"
+
+REFERENCE           M16GL_MENU
+LANG_ENGLISH        "M16A4 Grenadier"
+
+
+
+REFERENCE           AK47_MENU
+LANG_ENGLISH        "AK-47"
+
+REFERENCE           AK47GL_MENU
+LANG_ENGLISH        "AK-47 Grenadier"
+
+
+
+
+
+REFERENCE           M4_MENU
+LANG_ENGLISH        "M4A1"
+
+REFERENCE           M4_REFLEX_MENU
+LANG_ENGLISH        "M4A1 Reflex"
+
+REFERENCE           M4_REFLEX_SD_MENU
+LANG_ENGLISH        "M4A1 Reflex Silencer"
+
+REFERENCE           M4_SD_GL_MENU
+LANG_ENGLISH        "M4A1 Grenadier Silencer"
+
+REFERENCE           M4GLEOT_MENU
+LANG_ENGLISH        "M4A1 Grenadier Holographic"
+
+REFERENCE           M4_ACOG_SD_MENU
+LANG_ENGLISH        "M4A1 Acog Silencer"
+
+REFERENCE           M4_ACOG_GL_MENU
+LANG_ENGLISH        "M4A1 Acog Grenadier"
+
+REFERENCE           M4_SOPMOD_MENU
+LANG_ENGLISH        "M4A1 Red Dot Silencer Grenadier"
+
+
+
+
+
+
+REFERENCE           G36C_MENU
+LANG_ENGLISH        "G36C"
+
+REFERENCE           G3_MENU
+LANG_ENGLISH        "G3"
+
+REFERENCE           MP44_MENU
+LANG_ENGLISH        "MP44"
+
+
+REFERENCE           MP5_MENU
+LANG_ENGLISH        "MP5"
+
+REFERENCE           MP5SD_MENU
+LANG_ENGLISH        "MP5 Silencer"
+
+REFERENCE           MP5SDREFLEX_MENU
+LANG_ENGLISH        "MP5 Red Dot Silencer"
+
+REFERENCE           P90_MENU
+LANG_ENGLISH        "P90"
+
+REFERENCE           P90SD_MENU
+LANG_ENGLISH        "P90 Red Dot Silencer"
+
+REFERENCE           UZI_MENU
+LANG_ENGLISH        "Mini-Uzi"
+
+REFERENCE           UZISD_MENU
+LANG_ENGLISH        "Mini-Uzi Silencer"
+
+
+REFERENCE           SKORPION_MENU
+LANG_ENGLISH        "Skorpion"
+
+REFERENCE           AKU_MENU
+LANG_ENGLISH        "AK-74u"
+
+
+
+REFERENCE           SAW_MENU
+LANG_ENGLISH        "M249 SAW"
+
+REFERENCE           RPD_MENU
+LANG_ENGLISH        "RPD"
+
+REFERENCE           M60_MENU
+LANG_ENGLISH        "M60E4"
+
+
+
+REFERENCE           M40A3_MENU
+LANG_ENGLISH        "M40A3"
+
+REFERENCE           M14_MENU
+LANG_ENGLISH        "M14"
+
+REFERENCE           M14SCWD_MENU
+LANG_ENGLISH        "M14 Scoped Woodland"
+
+REFERENCE           M14SCSDGH_MENU
+LANG_ENGLISH        "M14 Scoped Silencer Ghillie"
+
+REFERENCE           M14SCDS_MENU
+LANG_ENGLISH        "M14 Scoped Desert"
+
+REFERENCE           SVD_MENU
+LANG_ENGLISH        "Dragunov"
+
+REFERENCE           R700_MENU
+LANG_ENGLISH        "R700"
+
+REFERENCE           BARRETT_MENU
+LANG_ENGLISH        "Barrett"
+
+REFERENCE           W1200_MENU
+LANG_ENGLISH        "W1200"
+
+REFERENCE           M1014_MENU
+LANG_ENGLISH        "M1014"
+
+REFERENCE           USP_MENU
+LANG_ENGLISH        "USP"
+
+REFERENCE           USP_SD_MENU
+LANG_ENGLISH        "USP Silencer"
+
+REFERENCE           M9_MENU
+LANG_ENGLISH        "Beretta"
+
+REFERENCE           M1911_MENU
+LANG_ENGLISH        "M1911"
+
+REFERENCE           DE_MENU
+LANG_ENGLISH        "Desert Eagle"
+
+
+
+REFERENCE          RPG_MENU
+LANG_ENGLISH        "RPG"
+
+REFERENCE          AT4_MENU
+LANG_ENGLISH        "AT4"
+
+REFERENCE          STINGER_MENU
+LANG_ENGLISH        "Stinger"
+
+REFERENCE           EQUIPMENT_MENU
+LANG_ENGLISH        "EQUIPMENT ARMORY"
+
+
+REFERENCE           FRAG_MENU
+LANG_ENGLISH        "Frag Grenades"
+
+REFERENCE           FLASH_MENU
+LANG_ENGLISH        "Flash Grenades"
+
+REFERENCE           C4_MENU
+LANG_ENGLISH        "C4 Explosives"
+
+REFERENCE           CLAY_MENU
+LANG_ENGLISH        "Claymore Mines"
+
+
+REFERENCE           PERKS_MENU
+LANG_ENGLISH        "Perks"
+
+REFERENCE           LAUNCHERS_MENU
+LANG_ENGLISH        "Rocket Launchers"
+
+REFERENCE           HANDS_MENU
+LANG_ENGLISH        "Hand Skins"
+
+REFERENCE           EQ_LAUNCHERS_MENU
+LANG_ENGLISH        "ROCKET LAUNCHERS"
+
+
+REFERENCE           EQ_HANDS_MENU
+LANG_ENGLISH        "SELECT HANDS SKIN"
+
+REFERENCE           EQ_PERKS_MENU
+LANG_ENGLISH        "SELECT PERK"
+
+
+
+
+
+REFERENCE           HAND_USMC_MENU
+LANG_ENGLISH        "U.S. Marines Desert"
+
+REFERENCE           HAND_SASW_MENU
+LANG_ENGLISH        "S.A.S Woodland"
+
+REFERENCE           HAND_RUSS_MENU
+LANG_ENGLISH        "Spetsnaz"
+
+REFERENCE           HAND_ARAB_MENU
+LANG_ENGLISH        "Op-For"
+
+REFERENCE           HAND_BKKT_MENU
+LANG_ENGLISH        "Black Kit"
+
+REFERENCE           HAND_FRCN_MENU
+LANG_ENGLISH        "Force Recon"
+
+REFERENCE           HAND_SNPR_MENU
+LANG_ENGLISH        "Ghillie Sniper"
+
+
+
+
+
+REFERENCE           BODYARMOR_MENU
+LANG_ENGLISH        "Body Armor"
+
+REFERENCE           SELFREVIVE_MENU
+LANG_ENGLISH        "Self Revive"
+
+REFERENCE           SPRINT_MENU
+LANG_ENGLISH        "Marathon"
+
+REFERENCE           OVERKILL_MENU
+LANG_ENGLISH        "Three Primaries"
+
+REFERENCE           FASTRELOAD_MENU
+LANG_ENGLISH        "Fast Reload"
+
+
+
+
+REFERENCE           LAUNCHERS_CONFIRM_MENU
+LANG_ENGLISH        "This weapon will replace your current weapon.\nDo you wish to continue?"
+
+
+
+REFERENCE           SUPPORT_MENU
+LANG_ENGLISH        "SUPPORT ARMORY"
+
+
+REFERENCE           AIRSTRIKE_MENU
+LANG_ENGLISH        "Air Strike"
+
+REFERENCE           AC130_MENU
+LANG_ENGLISH        "AC130 Strike"
+
+REFERENCE           HELI_MENU
+LANG_ENGLISH        "Helicopter"
+
+REFERENCE           TF_MENU
+LANG_ENGLISH        "Task Force"
+
+REFERENCE           SO_MENU
+LANG_ENGLISH        "Spec-Ops Team"
+
+REFERENCE           HR_MENU
+LANG_ENGLISH        "Hero Squad"
+
+
+
+
+REFERENCE           ATTACHMENTS
+LANG_ENGLISH        " "
+
+
+REFERENCE           PRICE_500
+LANG_ENGLISH        "(^2$500^7)"
+
+REFERENCE           PRICE_700
+LANG_ENGLISH        "(^2$700^7)"
+
+REFERENCE           PRICE_750
+LANG_ENGLISH        "(^2$750^7)"
+
+REFERENCE           PRICE_1000
+LANG_ENGLISH        "(^2$1000^7)"
+
+REFERENCE           PRICE_1200
+LANG_ENGLISH        "(^2$1200^7)"
+
+REFERENCE           PRICE_1500
+LANG_ENGLISH        "(^2$1500^7)"
+
+REFERENCE           PRICE_2000
+LANG_ENGLISH        "(^2$2000^7)"
+
+REFERENCE           PRICE_2500
+LANG_ENGLISH        "(^2$2500^7)"
+
+REFERENCE           PRICE_2800
+LANG_ENGLISH        "(^2$2800^7)"
+
+REFERENCE           PRICE_3000
+LANG_ENGLISH        "(^2$3000^7)"
+
+REFERENCE           PRICE_3100
+LANG_ENGLISH        "(^2$3100^7)"
+
+REFERENCE           PRICE_3500
+LANG_ENGLISH        "(^2$3500^7)"
+
+REFERENCE           PRICE_4000
+LANG_ENGLISH        "(^2$4000^7)"
+
+REFERENCE           PRICE_4500
+LANG_ENGLISH        "(^2$4500^7)"
+
+REFERENCE           PRICE_5000
+LANG_ENGLISH        "(^2$5000^7)"
+
+REFERENCE           PRICE_7000
+LANG_ENGLISH        "(^2$7000^7)"
+
+REFERENCE           PRICE_10000
+LANG_ENGLISH        "(^2$10.000^7)"
+
+REFERENCE           PRICE_100000
+LANG_ENGLISH        "(^2$100.000^7)"
+
+REFERENCE           PRICE_1MIL
+LANG_ENGLISH        "(^2$1.000.000^7)"
+
+REFERENCE           TRIGG_ENDING_PRICE_1MIL
+LANG_ENGLISH        "PRESS ^3&&1^7 TO END GAME.(^2$100.000^7)"
+
+
+
+
+REFERENCE           REFILL_AMMO_TEMP
+LANG_ENGLISH        "Press ^3&&1^7 to Refill Your Ammo. (^2$750^7)"
+
+
+REFERENCE           REFILL_FRAG
+LANG_ENGLISH        "Press ^3&&1^7 to Refill Your Frag Grenades. (^2$750^7)"
+
+REFERENCE           REFILL_FLASH
+LANG_ENGLISH        "Press ^3&&1^7 to Refill Your Flash Grenades. (^2$1000^7)"
+
+REFERENCE           REFILL_CLAY
+LANG_ENGLISH        "Press ^3&&1^7 to Refill Your Claymores. (^2$2000^7)"
+
+REFERENCE           REFILL_C4
+LANG_ENGLISH        "Press ^3&&1^7 to Refill Your C4. (^2$3000^7)"
+
+
+REFERENCE           GAME_OVER_WIN
+LANG_ENGLISH        "VICTORY!"
+
+
+
+
+REFERENCE           TASK_FORCE_CALL_TEMP
+LANG_ENGLISH        "Press ^3&&1^7 to Call in a Task Force. (^2$3000^7)"
+
+REFERENCE           SPEC_OPS_TEAM_CALL_TEMP
+LANG_ENGLISH        "Press ^3&&1^7 to Call in a Spec-Ops Team. (^2$5000^7)"
+
+
+
+REFERENCE           REVIVING
+LANG_ENGLISH        "Reviving Player"
+
+
+REFERENCE           GAME_OVER
+LANG_ENGLISH        "Game Over!"
+
+
+
+REFERENCE           GOT_SKIN
+LANG_ENGLISH        "You are already using this Skin!"
+
+REFERENCE           GOT_REVIVE
+LANG_ENGLISH        "You already have Self Revive!"
+
+REFERENCE           GOT_ARMOR
+LANG_ENGLISH        "You already have Body Armor!"
+
+REFERENCE           GOT_SPRINT
+LANG_ENGLISH        "You already have Extreme Conditioning!"
+
+REFERENCE           GOT_RELOAD
+LANG_ENGLISH        "You already have Fast Reload!"
+
+REFERENCE           GOT_OVERKILL
+LANG_ENGLISH        "You already have Three Primaries Perk!"
+
+REFERENCE           GOT_KILLSTREAK
+LANG_ENGLISH        "Air-Support already aquired or active!"
+
+REFERENCE           KILLSTREAK_WARNING
+LANG_ENGLISH        "WARNING! Friendly air-strike near your position! Danger Close!"
+
+
+
+
+REFERENCE           GOT_NOMONEY
+LANG_ENGLISH        "Not enough money!"
+
+REFERENCE           GOT_AIRSUP
+LANG_ENGLISH        "Air Support already available!"
+
+REFERENCE           GOT_REINF
+LANG_ENGLISH        "You already have Reinforcements!"
+
+REFERENCE           GOT_AMMO
+LANG_ENGLISH        "Ammo already full!"
+
+REFERENCE           SO_DIED
+LANG_ENGLISH        "Spec-Ops Team is K.I.A."
+
+REFERENCE           TF_DIED
+LANG_ENGLISH        "Task Force Team is K.I.A."
+
+
+
+
+
+REFERENCE           TOTAL_TIME
+LANG_ENGLISH        "Game Over!"
+
+
+REFERENCE           END_STATS
+LANG_ENGLISH        "YOUR STATS:"
+
+REFERENCE           WAVE_WAVE
+LANG_ENGLISH        "Wave: "
+
+REFERENCE           TOTAL_KILLS
+LANG_ENGLISH        "Kills: "
+
+REFERENCE           TOTAL_HS
+LANG_ENGLISH        "Headshots: "
+
+REFERENCE           TOTAL_TIME
+LANG_ENGLISH        "Time: "
+
+REFERENCE           TOTAL_MONEY
+LANG_ENGLISH        "Score: "
+
+REFERENCE           TOTAL_WAVE
+LANG_ENGLISH        "Survived to Wave "
+
+
+
+REFERENCE           ACHIVEMENT_UNLOCKED
+LANG_ENGLISH        "Achivement Unlocked"
+
+REFERENCE           ACHIVEMENT_SURVIVOR
+LANG_ENGLISH        "Survivor! \nSurvive Wave 25."
+
+
+
+REFERENCE           WAVE_STATS
+LANG_ENGLISH        "WAVE STATS:"
+
+REFERENCE           WAVE_KILLS
+LANG_ENGLISH        "Kills: "
+
+REFERENCE           WAVE_HS
+LANG_ENGLISH        "Headshots: "
+
+
+REFERENCE           WAVE_TIME_FULL
+LANG_ENGLISH        "Time: &&1:&&2.&&3"
+
+REFERENCE           WAVE_TIME
+LANG_ENGLISH        "Time: "
+
+REFERENCE           WAVE_MONEY
+LANG_ENGLISH        "Score: "
+
+REFERENCE           TIME_SEP_TWODOTS
+LANG_ENGLISH        ":"
+
+REFERENCE           TIME_SEP_DOT
+LANG_ENGLISH        "."
+
+REFERENCE           PLUS
+LANG_ENGLISH        "+"
+
+REFERENCE           PLUS_YELLOW
+LANG_ENGLISH        "^3+"
+
+
+REFERENCE           ARMOR_COUNT
+LANG_ENGLISH        "Armor: "
+
+
+REFERENCE           RESTART_LVL
+LANG_ENGLISH        "Restart"
+
+REFERENCE           BACK2MENU
+LANG_ENGLISH        "Quit"
+
+
+ENDMARKER

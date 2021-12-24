@@ -1,0 +1,182 @@
+#include "ui/menudef.h"
+#include "ui_mp/common_macro.inc"
+
+#define CHOICE_GROUP                "surv_spi"
+#define NO_BG_CLOSE                 1
+
+// required for inside-popup styles
+#include "ui_mp/menustyle.inc"
+#include "ui/choices_setup_common.menu"
+
+#undef CHOICE_HORIZONTAL_ALIGN
+#define CHOICE_HORIZONTAL_ALIGN	HORIZONTAL_ALIGN_CENTER
+#undef CHOICE_VERTICAL_ALIGN
+#define CHOICE_VERTICAL_ALIGN	VERTICAL_ALIGN_CENTER
+	
+// required for popup style
+#include "ui_mp/popupstyle.inc"
+#include "ui/choices_setup_popmenu.menu"
+
+//THIS MUST BE CALLED AFTER THE SCRIPTS ARE CALLED
+// setting longer buttons which in turn sets the width of the popup
+#undef CHOICE_SIZE_X
+#define CHOICE_SIZE_X			240
+
+//========================= MyMenuButton defines =========================
+
+
+#define SPI_CHOICE_BUTTON_VIS_NOHI( itemIndex, textArg, actionArg ) \
+    itemDef \
+    { \
+        type            ITEM_TYPE_BUTTON \
+        rect            CHOICE_RECT( itemIndex ) \
+        exp             text( textArg ); \
+        textfont        CHOICE_TEXTFONT \
+        textscale       CHOICE_TEXTSIZE \
+        textstyle       CHOICE_TEXTSTYLE \
+        textAlign       ITEM_ALIGN_MIDDLE_LEFT \
+        textAlignX      1 \
+        forecolor       CHOICE_TEXTCOLOR \
+        visible         1 \
+        CHOICE_SCRIPTS_ALL( itemIndex, actionArg, ;, ; ) \
+    }
+
+#define SPI_CHOICE_BUTTON_EXT( itemIndex, nameArg, costArg, actionArg ) \
+    CHOICE_BUTTON_BG( itemIndex, 1 ) \
+    CHOICE_HIGHLIGHT( itemIndex, 1 ) \
+    itemDef \
+    { \
+        type            ITEM_TYPE_TEXT \
+        rect            CHOICE_RECT( itemIndex ) \
+        exp             text( costArg ); \
+        textfont        CHOICE_TEXTFONT \
+        textscale       CHOICE_TEXTSIZE \
+        textstyle       CHOICE_TEXTSTYLE \
+        textAlign       ITEM_ALIGN_MIDDLE_RIGHT \
+        textAlignX      CHOICE_TEXT_OFFSET_X \
+        forecolor       CHOICE_TEXTCOLOR \
+        visible         1 \
+    } \
+    SPI_CHOICE_BUTTON_VIS_NOHI( itemIndex, nameArg, actionArg )
+
+#define SPI_CHOICE_BUTTON( itemIndex, textArg, actionArg ) \
+    CHOICE_BUTTON_BG( itemIndex, 1 ) \
+    CHOICE_HIGHLIGHT( itemIndex, 1 ) \
+    SPI_CHOICE_BUTTON_VIS_NOHI( itemIndex, textArg, actionArg )
+
+
+
+#define SPI_RG_CHOICE_BUTTON_FOCUS_VIS_NOHI_EX( itemIndex, textArg2, actionArg, onFocusArg, leaveFocusArg, visArg, extraArgs ) \
+        itemDef \
+        { \
+            type            ITEM_TYPE_BUTTON \
+            rect            CHOICE_RECT( itemIndex ) \
+            exp                text( textArg2 ); \
+            textfont        CHOICE_TEXTFONT \
+            textscale        CHOICE_TEXTSIZE \
+            textstyle        CHOICE_TEXTSTYLE \
+            textAlign        ITEM_ALIGN_MIDDLE_RIGHT \
+            textAlignX        CHOICE_TEXT_OFFSET_X \
+            forecolor        CHOICE_TEXTCOLOR \
+            visible            visArg \
+            extraArgs \
+            CHOICE_SCRIPTS_ALL( itemIndex, actionArg, onFocusArg, leaveFocusArg ) \
+        } \
+
+#define SPI_LF_CHOICE_BUTTON_FOCUS_VIS_NOHI_EX( itemIndex, textArg, actionArg, onFocusArg, leaveFocusArg, visArg, extraArgs ) \
+        itemDef \
+        { \
+            type            ITEM_TYPE_BUTTON \
+            rect            CHOICE_RECT( itemIndex ) \
+            exp                text( textArg ); \
+            textfont        CHOICE_TEXTFONT \
+            textscale        CHOICE_TEXTSIZE \
+            textstyle        CHOICE_TEXTSTYLE \
+            textAlign        ITEM_ALIGN_MIDDLE_LEFT \
+            textAlignX       1 \
+            forecolor        CHOICE_TEXTCOLOR \
+            visible            visArg \
+            extraArgs \
+            CHOICE_SCRIPTS_ALL( itemIndex, actionArg, onFocusArg, leaveFocusArg ) \
+        } \
+
+
+#define CHOICE_POPMENU_SUBTITLE_RIGHT_N_LEFT( itemIndex, textArg, textArg2 ) \
+		CHOICE_POPMENU_SUBTITLE_RIGHT_N_LEFT_VIS( itemIndex, textArg, textArg2, 1 )
+		
+#define CHOICE_POPMENU_SUBTITLE_RIGHT_N_LEFT_VIS( itemIndex, textArg, textArg2 ) \
+		itemDef \
+		{ \
+			type			ITEM_TYPE_BUTTON \
+			rect			CHOICE_RECT( itemIndex ) \
+			exp				text(textArg); \
+			textfont		UI_FONT_NORMAL \
+			textscale		CHOICE_POPUP_SUBTITLE_TEXTSIZE \
+			textAlign		ITEM_ALIGN_TOP_LEFT \
+			textstyle		CHOICE_TEXTSTYLE \
+			forecolor		CHOICE_TEXTCOLOR \
+			visible			1 \
+			decoration \
+			autowrapped \
+		} \
+		itemDef \
+		{ \
+			type			ITEM_TYPE_BUTTON \
+			rect			CHOICE_RECT( itemIndex ) \
+			exp				text(textArg2); \
+			textfont		UI_FONT_NORMAL \
+			textscale		CHOICE_POPUP_SUBTITLE_TEXTSIZE \
+			textAlign		ITEM_ALIGN_TOP_RIGHT \
+			textstyle		CHOICE_TEXTSTYLE \
+			forecolor		CHOICE_TEXTCOLOR \
+			visible			1 \
+			decoration \
+			autowrapped \
+		}
+
+
+
+
+//========================= Equipments =========================
+
+//------------------ Main -----------------------
+	
+	
+{
+	menuDef
+	{
+		CENTER_POPUP_SETUP( "survspi_gameover", 9.5, scriptMenuResponse "restart";, 1 )
+		
+
+		#define BACK2MENU \
+				play "mouse_click";\
+				scriptMenuResponse "back2menu";\
+				close self;
+		#define RESTART_LVL \
+				play "mouse_click";\
+				scriptMenuResponse "restart";\
+				close self; \
+				exec "fast_restart";	
+
+		//CHOICE_POPMENU_TITLE( "@SURVSPI_END_STATS" )
+		//CHOICE_POPMENU_TITLE( "@SURVSPI_TOTAL_WAVE" + dvarString("survspi_wave") + "!" )
+		CHOICE_POPMENU_TITLE( "Survived to Wave " + dvarString("survspi_wave") + "!" )
+
+		CHOICE_POPMENU_SUBTITLE_RIGHT_N_LEFT_VIS( 4, "@SURVSPI_TOTAL_KILLS" , dvarString("survspi_kills") )	
+		CHOICE_POPMENU_SUBTITLE_RIGHT_N_LEFT_VIS( 5, "@SURVSPI_TOTAL_HS" , dvarString("survspi_headshots") )	
+		CHOICE_POPMENU_SUBTITLE_RIGHT_N_LEFT_VIS( 6, "@SURVSPI_TOTAL_MONEY" , dvarString("survspi_total_score") )	
+		//CHOICE_POPMENU_SUBTITLE_RIGHT_N_LEFT_VIS( 7, "@SURVSPI_TOTAL_WAVE" , dvarString("survspi_wave") )	
+		CHOICE_POPMENU_SUBTITLE_RIGHT_N_LEFT_VIS( 7, "Time: ", dvarString("survspi_minutes") + ":" + dvarString("survspi_sub_seconds") + dvarString("survspi_seconds") + "." + dvarString("survspi_mili_seconds") )	
+		//CHOICE_SEPARATOR_VIS( 7, 1; )
+		//SPI_CHOICE_BUTTON( 8.5, "@SURVSPI_RESTART_LVL", RESTART_LVL )
+		//SPI_CHOICE_BUTTON( 9.5, "@SURVSPI_BACK2MENU", BACK2MENU )
+		CHOICE_BUTTON( 8.5, "@SURVSPI_RESTART_LVL", RESTART_LVL )
+		CHOICE_BUTTON( 9.5, "@SURVSPI_BACK2MENU", BACK2MENU )
+		
+		onESC 
+		{ 
+		
+		}
+		
+	}	
+}

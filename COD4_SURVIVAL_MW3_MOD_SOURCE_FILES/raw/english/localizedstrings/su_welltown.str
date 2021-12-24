@@ -1,0 +1,22 @@
+VERSION             "1"
+CONFIG              "F:\projects\mk\bin\StringEd\StringEd.cfg"
+FILENOTES           ""
+
+REFERENCE           MAPNAME
+LANG_ENGLISH        "su_welltown"
+
+
+REFERENCE           PLAY_MAP
+LANG_ENGLISH        "Play "Well Town" Survival"
+
+REFERENCE           PLAY_MAP_ASK
+LANG_ENGLISH        "Play "Well Town" Survival?"
+
+
+REFERENCE           FSCREEN
+LANG_ENGLISH        "Fullscreen"
+
+REFERENCE           FOV
+LANG_ENGLISH        "Field of View"
+
+ENDMARKER
